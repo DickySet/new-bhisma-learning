@@ -495,6 +495,8 @@
 
     .isi {
         height: calc(100vh - 80px);
+        /* height: auto; */
+        overflow-y: auto;
     }
 
     footer.mainPage {

@@ -1,0 +1,194 @@
+@import './base.css';
+
+button.button-landing-page {
+    border-radius: 8px;
+    border: 0px solid transparent;
+    padding: 7px 20px 0px 20px;
+    font-size: 12pt;
+    height: 40px;
+    font-weight: bold;
+    color: white;
+    background-image: linear-gradient(to bottom, #2ccf7e 0%, #067c7e 100%);
+    /* background-image: linear-gradient(to bottom, #067c7e 0%, #2ccf7e 100%); */
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+button.button-edit {
+    border-radius: 8px;
+    border: 0px solid transparent;
+    padding: 0.9em 2em;
+    font-size: 10pt;
+    height: 40px;
+    font-weight: bold;
+    color: white;
+    background: red;
+    /* background-image: linear-gradient(to bottom, #2ccf7e 0%, #067c7e 100%); */
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+button.button-tambah {
+    border-radius: 8px;
+    border: 0px solid transparent;
+    padding: 0.9em 2em;
+    font-size: 10pt;
+    height: 40px;
+    font-weight: bold;
+    color: white;
+    background-image: linear-gradient(to bottom, #EE427D 0%, #A8144A 100%);
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+button.button-simpan {
+    border-radius: 8px;
+    border: 0px solid transparent;
+    padding: 0.9em 2em;
+    font-size: 10pt;
+    height: 40px;
+    font-weight: bold;
+    color: white;
+    background-image: linear-gradient(to bottom, #489DEC 0%, #00387F 100%);
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+button.button-tutup {
+    border-radius: 8px;
+    border: 0px solid transparent;
+    padding: 0.9em 2em;
+    font-size: 10pt;
+    height: 40px;
+    font-weight: bold;
+    color: white;
+    background-image: linear-gradient(to bottom, #3C3C43 0%, #1E1E1F 100%);
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+button.button-edit:hover {
+    padding: 0.9em 2.5em;
+    /* background: #2ccf7e; */
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+button.button-tambah:hover {
+    padding: 0.9em 2.5em;
+    /* background: #EE427D; */
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+button.button-simpan:hover {
+    padding: 0.9em 2.5em;
+    /* background: #489DEC; */
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+button.button-tutup:hover {
+    padding: 0.9em 2.5em;
+    /* background: #3C3C43; */
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+@media screen and (min-width: 0px) and (max-width: 359px) {
+    button.button-landing-page {
+        padding: 0.5em 1.7em;
+        font-size: 9pt;
+        height: 35px;
+    }
+
+    button.button-edit {
+        padding: 0.5em 1.7em;
+        font-size: 9pt;
+        height: 35px;
+    }
+
+    button.button-tambah {
+        padding: 0.5em 1.7em;
+        font-size: 9pt;
+        height: 35px;
+    }
+
+    button.button-simpan {
+        padding: 0.5em 1.7em;
+        font-size: 9pt;
+        height: 35px;
+    }
+
+    button.button-tutup {
+        padding: 0.5em 1.7em;
+        font-size: 9pt;
+        height: 35px;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 576px) {
+
+    button.button-landing-page {
+        padding: 0.5em 1.7em;
+        font-size: 8pt;
+        height: 30px;
+    }
+
+    button.button-edit {
+        padding: 0.5em 1.7em;
+        font-size: 8pt;
+        height: 30px;
+    }
+
+    button.button-tambah {
+        padding: 0.5em 1.7em;
+        font-size: 8pt;
+        height: 30px;
+    }
+
+    button.button-simpan {
+        padding: 0.5em 1.7em;
+        font-size: 8pt;
+        height: 30px;
+    }
+
+    button.button-tutup {
+        padding: 0.5em 1.7em;
+        font-size: 8pt;
+        height: 30px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 769px) {
+
+    button.button-landing-page {
+        padding: 0.5em 1.7em;
+        font-size: 9pt;
+        height: 35px;
+    }
+
+    button.button-edit {
+        padding: 0.5em 1.7em;
+        font-size: 9pt;
+        height: 35px;
+    }
+
+    button.button-tambah {
+        padding: 0.5em 1.7em;
+        font-size: 9pt;
+        height: 35px;
+    }
+
+    button.button-simpan {
+        padding: 0.5em 1.7em;
+        font-size: 9pt;
+        height: 35px;
+    }
+
+    button.button-tutup {
+        padding: 0.5em 1.7em;
+        font-size: 9pt;
+        height: 35px;
+    }
+}

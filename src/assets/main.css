@@ -1,0 +1,61 @@
+@import './base.css';
+@import './styleButton.css';
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 0;
+    width: 100%;
+    transition: all 0.35s ease-in-out;
+}
+
+.kotak-icon-title {
+    width: 20px;
+    height: 65px;
+    border-radius: 13px;
+    background-image: linear-gradient(to bottom, #2ccf7e 0%, #067c7e 100%);
+}
+
+label.title {
+    font-size: 15pt;
+    font-family: 'Calibre-semiBold';
+    font-weight: bold;
+}
+
+label.title-description {
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+p.title-description {
+    font-size: 12pt;
+    margin-top: -5px;
+}
+
+label,
+p {
+    font-size: 12pt;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Calibre-semiBold';
+}
+
+input,
+select {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 0px 5px 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 12pt;
+    /* background: #eeeeee; */
+    border-bottom: 2px solid black;
+    outline: none;
+}

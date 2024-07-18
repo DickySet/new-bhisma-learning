@@ -504,6 +504,7 @@
         bottom: 0;
         padding: 15px 0px 0px 0px;
         height: 40px;
+        background-color: #F0F2F5;
     }
 
     #main {
@@ -639,7 +640,8 @@
         padding: 2px 5px 2px 5px;
         border-radius: 15px;
         height: 63px;
-        top: 10px;
+        /* top: 10px; */
+        background-color: #F0F2F5;
         position: sticky;
         top: 0;
         z-index: 1000;

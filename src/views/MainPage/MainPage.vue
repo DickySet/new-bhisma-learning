@@ -494,7 +494,7 @@
 <style>
 
     .isi {
-        height: calc(100vh - 106px);
+        height: calc(100vh - 125px);
         /* height: auto; */
         overflow-y: auto;
     }
@@ -502,8 +502,8 @@
     footer.mainPage {
         position: sticky;
         bottom: 0;
-        padding: 12px 0px 0px 0px;
-        height: 20px;
+        padding: 15px 0px 0px 0px;
+        height: 40px;
         background-color: #F0F2F5;
     }
 
@@ -754,7 +754,7 @@
 
         .isi {
             /* height: auto; */
-            height: calc(100vh - 300px);
+            /* height: calc(100vh - 103px); */
             /* overflow-y: auto; */
         }
 

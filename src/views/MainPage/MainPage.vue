@@ -38,7 +38,7 @@
         </aside>
 
         <main class="content">
-            <div class="navbars">
+            <div class="navbars container">
                 <div class="kotak_1">
                     <div class="kotak_1_1">
                         <p>
@@ -494,7 +494,7 @@
 <style>
 
     .isi {
-        height: calc(100vh - 125px);
+        height: calc(100vh - 93px);
         /* height: auto; */
         overflow-y: auto;
     }
@@ -636,10 +636,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 20px 13px 0px 13px;
-        padding: 2px 5px 2px 5px;
+        margin-top: 15px;
+        /* padding: 2px 5px 2px 5px; */
         /* border-radius: 15px; */
-        height: 63px;
+        height: 53px;
         /* top: 10px; */
         background-color: #F0F2F5;
         position: sticky;

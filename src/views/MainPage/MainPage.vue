@@ -496,7 +496,7 @@
     .isi {
         height: calc(100vh - 80px);
         /* height: auto; */
-        overflow-y: auto;
+        overflow-y: hidden;
     }
 
     footer.mainPage {
@@ -546,9 +546,9 @@
         flex: 1 0;
         width: 100vw;
         height: 100vh;
-        overflow: none;
-        overflow-y: none;
-        overflow-x: none;
+        overflow: hidden;
+        overflow-y: hidden;
+        overflow-x: hidden;
         padding: 0px 15px 5px 15px;
     }
 

@@ -754,7 +754,7 @@
 
         .isi {
             /* height: auto; */
-            height: calc(100vh - 106px);
+            height: calc(100vh - 300px);
             /* overflow-y: auto; */
         }
 

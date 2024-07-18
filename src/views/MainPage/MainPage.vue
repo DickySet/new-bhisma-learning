@@ -494,7 +494,7 @@
 <style>
 
     .isi {
-        height: calc(100vh - 120px);
+        height: calc(100vh - 103px);
         overflow-y: auto;
     }
 
@@ -542,9 +542,9 @@
 
     .content {
         flex: 1 0;
-        max-width: 100vw;
         width: 100vw;
         height: 100vh;
+        overflow: none;
         padding: 0px 15px 5px 15px;
     }
 

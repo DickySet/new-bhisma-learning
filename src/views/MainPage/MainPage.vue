@@ -640,6 +640,8 @@
         border-radius: 15px;
         height: 63px;
         top: 10px;
+        position: sticky;
+        top: 0;
         z-index: 1000;
         overflow-y: auto;
     }
@@ -752,6 +754,11 @@
             height: auto;
             /* height: calc(100vh - 103px); */
             overflow-y: auto;
+        }
+
+        footer.mainPage {
+            position: sticky;
+            bottom: 0;
         }
 
         .title-dashboard {

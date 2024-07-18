@@ -494,8 +494,8 @@
 <style>
 
     .isi {
-        height: calc(100vh - 125px);
-        /* height: calc(100vh - 103px); */
+        /* height: calc(100vh - 125px); */
+        height: calc(100vh - 103px);
         overflow-y: auto;
     }
 
@@ -543,7 +543,7 @@
 
     .content {
         flex: 1 0;
-        width: 100vw;
+        /* width: 100vw; */
         height: 100vh;
         overflow: none;
         padding: 0px 15px 5px 15px;
@@ -747,6 +747,13 @@
     }
 
     @media screen and (min-width: 360px) and (max-width: 576px) {
+        
+        .isi {
+            height: auto;
+            /* height: calc(100vh - 103px); */
+            overflow-y: auto;
+        }
+
         .title-dashboard {
             margin-top: 5px;
         }

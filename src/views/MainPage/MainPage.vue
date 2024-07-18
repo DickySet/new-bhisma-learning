@@ -503,7 +503,7 @@
         position: sticky;
         bottom: 0;
         padding: 15px 0px 0px 0px;
-        height: 40px;
+        height: 30px;
         background-color: #F0F2F5;
     }
 

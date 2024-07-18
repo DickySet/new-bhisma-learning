@@ -264,9 +264,15 @@
                     </div>
                 </div>
                 <div class="footer-sosmed d-flex" style="gap: 10px">
-                    <img src="../../assets/image/youtube.png">
-                    <img src="../../assets/image/linkedin.png">
-                    <img src="../../assets/image/social.png">
+                    <a target="_blank" href="https://www.youtube.com/@bhismalearningsystem">
+                        <img src="../../assets/image/youtube.png">
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/company/pt.-sinergi-multi-servindo/mycompany/">
+                        <img src="../../assets/image/linkedin.png">
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/bismainteraktif?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                        <img src="../../assets/image/social.png">
+                    </a>
                 </div>
             </div>
             <hr style="border: 1px solid white">

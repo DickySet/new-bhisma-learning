@@ -90,7 +90,7 @@
             </div>
         </div>
 
-        <div class="card border-0 shadow mt-3" data-aos="fade-up">
+        <div class="card border-0 shadow mt-3">
             <div class="card-body">
                 <div class="d-flex align-items-center" style="padding: 0px 20px 0px 20px; gap: 15px;">
                     <div class="kotak-icon-title shadow"></div>

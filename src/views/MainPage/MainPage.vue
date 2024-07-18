@@ -5,14 +5,14 @@
         <aside id="sidebar" class="js-sidebar">
 
             <router-link to="/dashboard" style="text-decoration: none; color: black;">
-                <div class="d-flex justify-content-center align-items-center title-dashboard" style="gap: 18px; cursor: pointer; margin-bottom: -10px">
+                <div class="d-flex justify-content-center align-items-center title-dashboard" style="gap: 18px; cursor: pointer">
                     <img src="../../assets/image/logo.png" width="40">
                     <h6 style="cursor:pointer; font-size: 14pt; margin-top: 20px"><b>Bhisma Interaktif</b></h6>
                 </div>
             </router-link>
             <hr>
 
-            <div class="nav-item" style="margin-top: -5px">
+            <div class="nav-item">
                 <template v-for="(header, a) in data_header" :key="header.menu_name">
                     <label style="margin-bottom: 5px; margin-top: 10px;"><b>{{ header.menu_name }}</b></label>
 
@@ -503,7 +503,7 @@
         position: sticky;
         bottom: 0;
         padding: 15px 0px 0px 0px;
-        height: 30px;
+        height: 40px;
         background-color: #F0F2F5;
     }
 
@@ -523,7 +523,7 @@
         height: 100vh;
         max-width: 264px;
             min-width: 264px;
-        padding: 10px 20px 20px 20px;
+        padding: 20px;
         overflow-y: auto;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         transition: all 0.35s ease-in-out;

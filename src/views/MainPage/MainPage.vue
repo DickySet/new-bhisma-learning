@@ -494,8 +494,8 @@
 <style>
 
     .isi {
-        /* height: calc(100vh - 125px); */
-        height: calc(100vh - 103px);
+        height: calc(100vh - 125px);
+        /* height: auto; */
         overflow-y: auto;
     }
 
@@ -544,9 +544,9 @@
 
     .content {
         flex: 1 0;
-        /* width: 100vw; */
+        width: 100vw;
         height: 100vh;
-        overflow: none;
+        overflow-y: none;
         padding: 0px 15px 5px 15px;
     }
 
@@ -638,14 +638,13 @@
         align-items: center;
         margin: 20px 13px 0px 13px;
         padding: 2px 5px 2px 5px;
-        border-radius: 15px;
+        /* border-radius: 15px; */
         height: 63px;
         /* top: 10px; */
         background-color: #F0F2F5;
         position: sticky;
         top: 0;
         z-index: 1000;
-        overflow-y: auto;
     }
 
     .kotak_1 {
@@ -752,10 +751,11 @@
 
     @media screen and (min-width: 360px) and (max-width: 576px) {
         
+
         .isi {
-            height: auto;
+            /* height: auto; */
             /* height: calc(100vh - 103px); */
-            overflow-y: auto;
+            /* overflow-y: auto; */
         }
 
         footer.mainPage {

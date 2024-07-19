@@ -102,7 +102,7 @@
                 <input class="search" type="text" v-model="searchText" placeholder="Pencarian berdasarkan Nama Pendaftar">
             </div>
 
-            <div class="pt-3">
+            <div class="table">
                 <table style="width: 100%;">
                     <thead>
                         <tr>

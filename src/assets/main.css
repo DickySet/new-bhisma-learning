@@ -166,9 +166,16 @@ table tbody tr td {
 
     table thead tr th {
         font-size: 11pt;
+        width: 100%;
     }
 
     table tbody tr td {
         font-size: 11pt;
+        width: 100%;
+    }
+
+    .table {
+        width: 100%;
+        overflow: auto;
     }
 }

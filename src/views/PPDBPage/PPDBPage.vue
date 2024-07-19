@@ -81,10 +81,10 @@
     </section>
 
     <section id="alur" data-aos="fade-up" >
-        <div class="container">
+        <div class="container mb-3">
             <div class="container-content2">
                 <div class="content2">
-                    <h2>Tahapan Penerimaan PPDB</h2>
+                    <h2>Daftar Peserta PPDB</h2>
                     <h1>SMA Negeri Percontohan</h1>
                 </div>
             </div>
@@ -778,6 +778,14 @@
         .layout-modal-1,
         .layout-modal-2 {
             width: 100%;
+        }
+
+        .content2 h2{
+            font-size: 18pt;
+        }
+
+        .content2 h1{
+            font-size: 23pt;
         }
 
 

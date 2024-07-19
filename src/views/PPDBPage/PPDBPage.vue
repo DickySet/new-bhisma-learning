@@ -62,7 +62,7 @@
 
     <section id="cekPendaftaran">
         <div class="kotak3">
-            <div class="text-center" style="width: 62%">
+            <div class="text-center" style="width: 65%">
                 <h1>Cek Status Pendaftaran Siswa</h1>
                 <p>Lakukan cek sekala berkala agar informasi pendaftaran update</p>
                 <div class="input">
@@ -77,6 +77,69 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="alur" data-aos="fade-up" >
+        <div class="container">
+            <div class="container-content2">
+                <div class="content2">
+                    <h2>Tahapan Penerimaan PPDB</h2>
+                    <h1>SMA Negeri Percontohan</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="dataPendaftar" data-aos="fade-up">
+        <div class="container pb-4">
+            <div class="d-flex" style="gap: 10px">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" style="color: white; font-weight: bold;" width="17" height="17" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    </svg>
+                </div>
+                <input class="search" type="text" v-model="searchText" placeholder="Pencarian berdasarkan Nama Pendaftar">
+            </div>
+
+            <div class="pt-3">
+                <table style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>No Registrasi</th>
+                            <th>Sekolah Asal</th>
+                            <th>Pendaftar</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr v-for="(recap1, index) in data"> -->
+                        <tr v-for="(recap1, index) in paginatedData()">
+                            <td>{{index+1 + (currentPage - 1) * pageSize}}</td>
+                            <td>{{recap1.no_registration}}</td>
+                            <td>{{recap1.school_before}}</td>
+                            <td>{{recap1.name}}</td>
+                            <td>{{recap1.status}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pagination pt-3">
+                <button @click="previousPage" :disabled="currentPage == 1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                    </svg>
+                </button>
+                <span>Page <b>{{ currentPage }}</b> of <b>{{ totalPages }}</b></span>
+                <button @click="nextPage" :disabled="currentPage == totalPages">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>
+                </button>
+            </div>
+
         </div>
     </section>
 
@@ -214,6 +277,79 @@
                 dataSekolah: 125,
                 dataSiswa: 1678,
                 dataUjian: 13564,
+
+                searchText: '',
+                currentPage: 1,
+                pageSize: 5,
+
+                data: [
+                    {
+                        no_registration: 'IPA000001',
+                        school_before: 'SMAN 1 Parahyangan',
+                        name: 'Dicky Setiawan',
+                        status: 'Proses',
+                    },
+                    {
+                        no_registration: 'IPA000002',
+                        school_before: 'SMAN 2 Gorontalo',
+                        name: 'Nur Sidiq Faturahman',
+                        status: 'Proses',
+                    },
+                    {
+                        no_registration: 'IPA000003',
+                        school_before: 'SMKN 21 Merauke',
+                        name: 'Cahyadi',
+                        status: 'Proses',
+                    },
+                    {
+                        no_registration: 'IPA000004',
+                        school_before: 'SMKN 45 Jakarta',
+                        name: 'Oza Rangkuti',
+                        status: 'Proses',
+                    },
+                    {
+                        no_registration: 'IPA000005',
+                        school_before: 'SMKN 5 Medan',
+                        name: 'Rafi Azizi',
+                        status: 'Proses',
+                    },
+                    {
+                        no_registration: 'IPA000006',
+                        school_before: 'SMKN 15 Aceh',
+                        name: 'Hartini',
+                        status: 'Proses',
+                    },
+                    {
+                        no_registration: 'IPA000007',
+                        school_before: 'SMAN 15 Papua',
+                        name: 'Kaka Ternate',
+                        status: 'Proses',
+                    },
+                    {
+                        no_registration: 'IPA000008',
+                        school_before: 'MA 12 Jakarta',
+                        name: 'Faturrahman',
+                        status: 'Proses',
+                    },
+                    {
+                        no_registration: 'IPA000009',
+                        school_before: 'SMAN 21 Jakarta',
+                        name: 'Aji Begawan',
+                        status: 'Proses',
+                    },
+                    {
+                        no_registration: 'IPA000010',
+                        school_before: 'SMAN 11 Jakarta',
+                        name: 'Kevin Sanjaya',
+                        status: 'Proses',
+                    },
+                    {
+                        no_registration: 'IPA000011',
+                        school_before: 'SMAN 11 Jakarta',
+                        name: 'Susi Susanti',
+                        status: 'Proses',
+                    },
+                ]
             }
         },
         mounted(){
@@ -266,6 +402,36 @@
             });
 
             });
+        },
+        computed:{
+            totalPages(){
+                const data = this.data.filter(item => {
+                    return item.name.toLowerCase().includes(this.searchText.toLowerCase())
+                });
+
+                return Math.ceil(data.length / this.pageSize);
+            }
+        },
+        methods: {
+            paginatedData(){
+                const data = this.data.filter(item => {
+                    return item.name.toLowerCase().includes(this.searchText.toLowerCase())
+                });
+
+                const start = (this.currentPage - 1) * this.pageSize;
+                const end = start + this.pageSize;
+                return data.slice(start, end);
+            },
+            nextPage(){
+                if(this.currentPage < this.totalPages){
+                    this.currentPage++
+                };
+            },
+            previousPage(){
+                if(this.currentPage > 1){
+                    this.currentPage--
+                };
+            }
         }
     }
 </script>
@@ -484,6 +650,26 @@
         border: none;
         background: linear-gradient(87deg, #067c7e 20%, #2ccf7e 100%) !important;
         color: white;
+    }
+
+    .container-content2 {
+        margin-top: 90px;
+    }
+
+    .content2 {
+        text-align: center;
+    }
+
+    .content2 h2{
+        font-family: 'Calibre';
+        font-size: 25pt;
+    }
+
+    .content2 h1{
+        font-family: 'Calibre-semiBold';
+        margin-top: -10px;
+        margin-bottom: 0px;
+        font-size: 30pt;
     }
 
     @media screen and (min-width: 0) and (max-width:359px){

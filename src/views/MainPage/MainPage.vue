@@ -38,7 +38,7 @@
         </aside>
 
         <main class="content">
-            <div class="navbars container">
+            <div class="navbars">
                 <div class="kotak_1">
                     <div class="kotak_1_1">
                         <p>
@@ -85,9 +85,7 @@
             </div>
 
             <footer class="mainPage">
-                <div class="container">
-                    <p>&copy; 2024 <a style="text-decoration: none; color: blue; font-weight: bold" href="https://smservindo.co.id/#/">Servindo</a>. All rights reserved.</p>
-                </div>
+                <p>&copy; 2024 <a style="text-decoration: none; color: blue; font-weight: bold" href="https://smservindo.co.id/#/">Servindo</a>. All rights reserved.</p>
             </footer>
 
         </main>
@@ -507,6 +505,10 @@
         background-color: #F0F2F5;
     }
 
+    footer.mainPage p{
+        padding: 0px 0px 0px 15px;
+    }
+
     #main {
         background-color: #F0F2F5;
     }
@@ -637,7 +639,7 @@
         justify-content: space-between;
         align-items: center;
         margin-top: 15px;
-        /* padding: 2px 5px 2px 5px; */
+        padding: 0px 0px 0px 15px;
         /* border-radius: 15px; */
         height: 53px;
         /* top: 10px; */

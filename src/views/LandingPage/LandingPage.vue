@@ -138,9 +138,9 @@
                     </div>
                     <div class="card shadow card1" data-aos="fade-up">
                         <div class="card-body">
-                            <img src="../../assets/image/online.png">
-                            <h5>Raport</h5>
-                            <p>Mempermudah guru dalam merekap nilai siswa, dan membuat raport tengah maupun akhir semester.</p>
+                            <img src="../../assets/image/verification.png">
+                            <h5>Absensi</h5>
+                            <p>Kepala sekolah maupun orang tua murid dapat dengan mudah mendapatkan info kehadiran siswa, kehadiran guru dan staff secara cepat.</p>
                         </div>
                     </div>
                     <div class="card shadow card1" data-aos="fade-up">

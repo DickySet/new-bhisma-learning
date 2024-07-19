@@ -17,10 +17,10 @@ button.button-landing-page {
 button.button-edit {
     border-radius: 8px;
     border: 0px solid transparent;
-    padding: 0.9em 2em;
-    font-size: 10pt;
+    padding: 9px 25px 4px 25px;
+    font-size: 13pt;
     height: 40px;
-    font-weight: bold;
+    /* font-weight: bold; */
     color: white;
     background: red;
     /* background-image: linear-gradient(to bottom, #2ccf7e 0%, #067c7e 100%); */
@@ -31,10 +31,10 @@ button.button-edit {
 button.button-tambah {
     border-radius: 8px;
     border: 0px solid transparent;
-    padding: 0.9em 2em;
-    font-size: 10pt;
+    padding: 9px 25px 4px 25px;
+    font-size: 13pt;
     height: 40px;
-    font-weight: bold;
+    /* font-weight: bold; */
     color: white;
     background-image: linear-gradient(to bottom, #EE427D 0%, #A8144A 100%);
     cursor: pointer;
@@ -44,10 +44,10 @@ button.button-tambah {
 button.button-simpan {
     border-radius: 8px;
     border: 0px solid transparent;
-    padding: 0.9em 2em;
-    font-size: 10pt;
+    padding: 9px 25px 4px 25px;
+    font-size: 13pt;
     height: 40px;
-    font-weight: bold;
+    /* font-weight: bold; */
     color: white;
     background-image: linear-gradient(to bottom, #489DEC 0%, #00387F 100%);
     cursor: pointer;
@@ -57,10 +57,10 @@ button.button-simpan {
 button.button-tutup {
     border-radius: 8px;
     border: 0px solid transparent;
-    padding: 0.9em 2em;
-    font-size: 10pt;
+    padding: 9px 25px 4px 25px;
+    font-size: 13pt;
     height: 40px;
-    font-weight: bold;
+    /* font-weight: bold; */
     color: white;
     background-image: linear-gradient(to bottom, #3C3C43 0%, #1E1E1F 100%);
     cursor: pointer;
@@ -68,28 +68,28 @@ button.button-tutup {
 }
 
 button.button-edit:hover {
-    padding: 0.9em 2.5em;
+    padding: 9px 30px 4px 30px;
     /* background: #2ccf7e; */
     cursor: pointer;
     transition: all 0.4s ease;
 }
 
 button.button-tambah:hover {
-    padding: 0.9em 2.5em;
+    padding: 9px 30px 4px 30px;
     /* background: #EE427D; */
     cursor: pointer;
     transition: all 0.4s ease;
 }
 
 button.button-simpan:hover {
-    padding: 0.9em 2.5em;
+    padding: 9px 30px 4px 30px;
     /* background: #489DEC; */
     cursor: pointer;
     transition: all 0.4s ease;
 }
 
 button.button-tutup:hover {
-    padding: 0.9em 2.5em;
+    padding: 9px 30px 4px 30px;
     /* background: #3C3C43; */
     cursor: pointer;
     transition: all 0.4s ease;

@@ -36,7 +36,7 @@ p.title-description {
 
 label,
 p {
-    font-size: 12pt;
+    font-size: 13pt;
 }
 
 h1,
@@ -49,14 +49,49 @@ h6 {
 }
 
 input,
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 0px 5px 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 13pt;
+    background: #eeeeee;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
 select {
     width: 100%;
     margin-bottom: 10px;
-    padding: 10px 0px 5px 5px;
+    padding: 15px 0px 10px 15px;
     border-radius: 5px;
     border: none;
-    font-size: 12pt;
-    /* background: #eeeeee; */
+    font-size: 13pt;
+    background: #eeeeee;
     border-bottom: 2px solid black;
     outline: none;
+}
+
+
+@media screen and (min-width: 0) and (max-width:359px) {
+
+    label,
+    p {
+        font-size: 11pt;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 527px) {
+
+    label,
+    p {
+        font-size: 11pt;
+    }
+
+    input,
+    textarea,
+    select {
+        font-size: 11pt;
+    }
 }

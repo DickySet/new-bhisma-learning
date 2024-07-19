@@ -111,7 +111,7 @@ table thead tr th {
 
 table tbody tr td {
     font-size: 13pt;
-    padding: 12px;
+    padding: 15px;
     text-align: center;
     border: none;
     border-bottom: 0.5px solid #000000;
@@ -166,16 +166,34 @@ table tbody tr td {
 
     table thead tr th {
         font-size: 11pt;
+        padding: 10px;
         width: 100%;
     }
 
     table tbody tr td {
         font-size: 11pt;
+        padding: 10px;
         width: 100%;
     }
 
     .table {
         width: 100%;
         overflow: auto;
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    input.search {
+        width: 150px;
+        font-size: 11pt;
+    }
+
+    .pagination button {
+        width: 35px;
+        height: 35px;
     }
 }

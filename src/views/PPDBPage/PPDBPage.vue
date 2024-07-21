@@ -49,7 +49,7 @@
             <div class="container-content">
                 <div class="content1">
                     <h2>Pendaftaran Peserta Didik Baru</h2>
-                    <h1>SMA Negeri Percontohan</h1>
+                    <h1>Bhisma Interaktif</h1>
                     <p>{{text}}</p>
                     <div class="d-flex justify-content-center" style="gap: 20px">
                         <button class="rounded-pill">Daftar Sekarang</button>
@@ -85,7 +85,7 @@
             <div class="container-content2">
                 <div class="content2">
                     <h2>Alur Pendaftaran PPDB</h2>
-                    <h1>SMA Negeri Percontohan</h1>
+                    <h1>Bhisma Interaktif</h1>
                 </div>
             </div>
         </div>
@@ -247,7 +247,7 @@
             <div class="container-content2">
                 <div class="content2">
                     <h2>Daftar Peserta PPDB</h2>
-                    <h1>SMA Negeri Percontohan</h1>
+                    <h1>Bhisma Interaktif</h1>
                 </div>
             </div>
         </div>
@@ -435,7 +435,7 @@
         },
         data(){
             return {
-                text: 'Sistem Informasi Pendaftaran Peserta Didik Baru (PPDB) SMA Negeri Percontohan',
+                text: 'Sistem Informasi Pendaftaran Peserta Didik Baru (PPDB) Bhisma Interaktif',
                 dataSekolah: 125,
                 dataSiswa: 1678,
                 dataUjian: 13564,

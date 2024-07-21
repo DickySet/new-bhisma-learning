@@ -201,7 +201,7 @@
         </div>
     </section>
 
-    <img src="../../assets/image/pinggir2.png" class="bg2">
+    <img src="../../assets/image/pinggir3.png" class="bg2">
 
     <section id="ekosistem" data-aos="fade-up">
         <div class="container" >

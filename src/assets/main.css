@@ -102,7 +102,7 @@ input.search {
 
 table thead tr th {
     font-size: 13pt;
-    padding: 15px;
+    padding: 10px 15px 5px 15px;
     text-align: center;
     font-weight: bold;
     background-color: #eeeeee !important;
@@ -111,11 +111,15 @@ table thead tr th {
 
 table tbody tr td {
     font-size: 13pt;
-    padding: 15px;
+    padding: 10px 15px 5px 15px;
     text-align: center;
     border: none;
     border-bottom: 0.5px solid #000000;
     color: black;
+}
+
+table tbody tr:hover {
+    background-color: #eeeeee;
 }
 
 .pagination {

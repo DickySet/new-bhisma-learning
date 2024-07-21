@@ -84,6 +84,132 @@
         <div class="container mb-3">
             <div class="container-content2">
                 <div class="content2">
+                    <h2>Alur Pendaftaran PPDB</h2>
+                    <h1>SMA Negeri Percontohan</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="alur">
+        <div class="container alur-content">
+            <div class="alur1">
+                <img src="../../assets/image/registration.png" alt="">
+            </div>
+            <div class="alur2">
+                <div class="desk-alur">
+                    <h1>Mempersiapkan Berkas</h1>
+                    <p>Peserta didik mempersiapkan beberapa berkas yang akan digunakan untuk pendaftaran</p>
+                </div>
+            </div>
+        </div>
+        <div style="width: 100vw;">
+            <div class="number">
+                <label>1</label>
+            </div>
+        </div>
+        <div class=" container alur-content">
+            <div class="alur2-1">
+                <div class="desk-alur-1">
+                    <h1>Melakukan Pembayaran</h1>
+                    <p>Lakukan pembayaran ke sekolah untuk mendapatkan Token yang akan digunakan untuk melakukan pendaftaran online</p>
+                </div>
+            </div>
+            <div class="alur1-1">
+                <img src="../../assets/image/operation.png" alt="">
+            </div>
+        </div>
+        <div style="width: 100vw;">
+            <div class="number">
+                <label>2</label>
+            </div>
+        </div>
+        <div class="container alur-content">
+            <div class="alur1">
+                <img src="../../assets/image/website1.png" alt="">
+            </div>
+            <div class="alur2">
+                <div class="desk-alur">
+                    <h1>Mendaftar Secara Online</h1>
+                    <p>Peserta didik melakukan pendaftaran secara online, dengan menginputkan token yang sudah didapatkan sebelumnya, dan mengisi data dengan baik dan benar</p>
+                </div>
+            </div>
+        </div>
+        <div style="width: 100vw;">
+            <div class="number">
+                <label>3</label>
+            </div>
+        </div>
+        <div class=" container alur-content">
+            <div class="alur2-1">
+                <div class="desk-alur-1">
+                    <h1>Verifikasi Data</h1>
+                    <p>Pihak sekolah akan melakukan Verifikasi dan validasi data untuk memastikan semua data peserta didik sudah sesuai </p>
+                </div>
+            </div>
+            <div class="alur1-1">
+                <img src="../../assets/image/operation.png" alt="">
+            </div>
+        </div>
+        <div style="width: 100vw;">
+            <div class="number">
+                <label>4</label>
+            </div>
+        </div>
+        <div class="container alur-content">
+            <div class="alur1">
+                <img src="../../assets/image/website1.png" alt="">
+            </div>
+            <div class="alur2">
+                <div class="desk-alur">
+                    <h1>Proses Seleksi</h1>
+                    <p>Setelah dinyatakan valid, berkas pendaftaran akan diproses sebagai peserta seleksi PPDB</p>
+                </div>
+            </div>
+        </div>
+        <div style="width: 100vw;">
+            <div class="number">
+                <label>5</label>
+            </div>
+        </div>
+        <div class=" container alur-content">
+            <div class="alur2-1">
+                <div class="desk-alur-1">
+                    <h1>Pengumuman Seleksi</h1>
+                    <p>Pengumuman penerimaan peserta didik yang sudah terseleksi, dan dinyatakan lolos 100%</p>
+                </div>
+            </div>
+            <div class="alur1-1">
+                <img src="../../assets/image/shortlist.png" alt="">
+            </div>
+        </div>
+        <div style="width: 100vw;">
+            <div class="number">
+                <label>6</label>
+            </div>
+        </div>
+        <div class="container alur-content">
+            <div class="alur1">
+                <img src="../../assets/image/website1.png" alt="">
+            </div>
+            <div class="alur2">
+                <div class="desk-alur">
+                    <h1>Daftar Ulang</h1>
+                    <p>Peserta yang sudah lolos harus melakukan pendaftaran ulang ke sekolah</p>
+                </div>
+            </div>
+        </div>
+        <div style="width: 100vw;">
+            <div class="number">
+                <label>7</label>
+            </div>
+        </div>
+    </div>
+
+    <section id="daftar" data-aos="fade-up" >
+        <div class="container mb-3">
+            <div class="container-content2">
+                <div class="content2">
                     <h2>Daftar Peserta PPDB</h2>
                     <h1>SMA Negeri Percontohan</h1>
                 </div>
@@ -670,6 +796,84 @@
         margin-top: -10px;
         margin-bottom: 0px;
         font-size: 30pt;
+    }
+
+    .alur-content {
+        display: flex;
+    }
+
+    .alur1{
+        width: 50%;
+        padding: 35px 0px 35px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 4px dashed black;
+    }
+
+    .alur2 {
+        width: 50%;
+        padding: 35px 0px 35px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .alur1-1{
+        width: 50%;
+        padding: 35px 0px 35px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .alur2-1 {
+        width: 50%;
+        padding: 35px 0px 35px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 4px dashed black;
+    }
+
+    .desk-alur-1 {
+        text-align: right;
+    }
+
+    .desk-alur h1,
+    .desk-alur-1 h1{
+        font-family: 'Calibre-semiBold';
+        /* margin-top: -10px; */
+        margin-bottom: 0px;
+        font-size: 23pt;
+    }
+
+    .desk-alur p,
+    .desk-alur-1 p{
+        width: 400px;
+        font-size: 15pt;
+    }
+
+    .number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: linear-gradient(to bottom, #067c7e 20%, #2ccf7e 100%) !important;
+        position: absolute;
+        z-index: 100;
+        margin-left: calc(100vw - 51.7vw);
+        margin-top: -150px;
+    }
+
+    .number label {
+        font-family: 'Calibre-semiBold';
+        font-size: 23pt;
+        color: white;
+        margin-top: 10px;
     }
 
     @media screen and (min-width: 0) and (max-width:359px){

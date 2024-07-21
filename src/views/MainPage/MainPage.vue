@@ -603,7 +603,7 @@
     .menu .icon {
         transition: all 0.3s ease;
         /* background-color: #F8F9FA; */
-        background-image: linear-gradient(to right, #067c7e 0%, #2ccf7e 100%);
+        background-image: linear-gradient(to bottom, #489DEC 0%, #00387F 100%);
         width: 34px;
         height: 34px;
         display: flex;

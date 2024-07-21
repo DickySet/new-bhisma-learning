@@ -15,7 +15,7 @@ main {
     width: 20px;
     height: 65px;
     border-radius: 13px;
-    background-image: linear-gradient(to bottom, #2ccf7e 0%, #067c7e 100%);
+    background-image: linear-gradient(to bottom, #489DEC 0%, #00387F 100%);
 }
 
 label.title {

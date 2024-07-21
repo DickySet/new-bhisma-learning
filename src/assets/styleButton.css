@@ -22,8 +22,8 @@ button.button-edit {
     height: 40px;
     /* font-weight: bold; */
     color: white;
-    background: red;
-    /* background-image: linear-gradient(to bottom, #2ccf7e 0%, #067c7e 100%); */
+    /* background: red; */
+    background-image: linear-gradient(to bottom, #2ccf7e 0%, #067c7e 100%);
     cursor: pointer;
     transition: all 0.4s ease;
 }

@@ -92,118 +92,154 @@
     </section>
 
     <div class="alur">
-        <div class="container alur-content">
-            <div class="alur1">
-                <img src="../../assets/image/registration.png" alt="">
-            </div>
-            <div class="alur2">
-                <div class="desk-alur">
-                    <h1>Mempersiapkan Berkas</h1>
-                    <p>Peserta didik mempersiapkan beberapa berkas yang akan digunakan untuk pendaftaran</p>
+        <template v-if="token">
+            <div class="container alur-content">
+                <div class="alur2">
+                    <img src="../../assets/image/1.png" alt="">
+                </div>
+                <div class="alur1">
+                    <div class="desk-alur">
+                        <h1>Mempersiapkan Berkas</h1>
+                        <p>Proses ini melibatkan pengumpulan dokumen-dokumen penting yang diperlukan untuk peserta didik dalam memenuhi persyaratan pendaftaran.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div style="width: 100vw;">
-            <div class="number">
-                <label>1</label>
-            </div>
-        </div>
-        <div class=" container alur-content">
-            <div class="alur2-1">
-                <div class="desk-alur-1">
-                    <h1>Melakukan Pembayaran</h1>
-                    <p>Lakukan pembayaran ke sekolah untuk mendapatkan Token yang akan digunakan untuk melakukan pendaftaran online</p>
+            <div class=" container alur-content">
+                <div class="alur1">
+                    <div class="desk-alur-1">
+                        <h1>Melakukan Pembayaran</h1>
+                        <p>Setelah mempersiapkan berkas, langkah berikutnya adalah melakukan pembayaran ke sekolah. Pembayaran ini bertujuan untuk mendapatkan Token yang diperlukan untuk melanjutkan proses pendaftaran online.</p>
+                    </div>
+                </div>
+                <div class="alur2">
+                    <img src="../../assets/image/2.png" alt="">
                 </div>
             </div>
-            <div class="alur1-1">
-                <img src="../../assets/image/operation.png" alt="">
-            </div>
-        </div>
-        <div style="width: 100vw;">
-            <div class="number">
-                <label>2</label>
-            </div>
-        </div>
-        <div class="container alur-content">
-            <div class="alur1">
-                <img src="../../assets/image/website1.png" alt="">
-            </div>
-            <div class="alur2">
-                <div class="desk-alur">
-                    <h1>Mendaftar Secara Online</h1>
-                    <p>Peserta didik melakukan pendaftaran secara online, dengan menginputkan token yang sudah didapatkan sebelumnya, dan mengisi data dengan baik dan benar</p>
+            <div class="container alur-content">
+                <div class="alur2">
+                    <img src="../../assets/image/3.png" alt="">
+                </div>
+                <div class="alur1">
+                    <div class="desk-alur">
+                        <h1>Mendaftar Secara Online</h1>
+                        <p>Peserta didik melakukan pendaftaran secara online, dengan menginputkan token yang sudah didapatkan sebelumnya, dan mengisi data dengan baik dan benar</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div style="width: 100vw;">
-            <div class="number">
-                <label>3</label>
-            </div>
-        </div>
-        <div class=" container alur-content">
-            <div class="alur2-1">
-                <div class="desk-alur-1">
-                    <h1>Verifikasi Data</h1>
-                    <p>Pihak sekolah akan melakukan Verifikasi dan validasi data untuk memastikan semua data peserta didik sudah sesuai </p>
+            <div class=" container alur-content">
+                <div class="alur1">
+                    <div class="desk-alur-1">
+                        <h1>Verifikasi Data</h1>
+                        <p>Pihak sekolah akan melakukan verifikasi dan validasi data. Langkah ini dilakukan untuk memastikan bahwa semua informasi yang diberikan oleh peserta didik sudah lengkap dan sesuai dengan persyaratan yang telah ditetapkan.</p>
+                    </div>
+                </div>
+                <div class="alur2">
+                    <img src="../../assets/image/4.png" alt="">
                 </div>
             </div>
-            <div class="alur1-1">
-                <img src="../../assets/image/operation.png" alt="">
-            </div>
-        </div>
-        <div style="width: 100vw;">
-            <div class="number">
-                <label>4</label>
-            </div>
-        </div>
-        <div class="container alur-content">
-            <div class="alur1">
-                <img src="../../assets/image/website1.png" alt="">
-            </div>
-            <div class="alur2">
-                <div class="desk-alur">
-                    <h1>Proses Seleksi</h1>
-                    <p>Setelah dinyatakan valid, berkas pendaftaran akan diproses sebagai peserta seleksi PPDB</p>
+            <div class="container alur-content">
+                <div class="alur2">
+                    <img src="../../assets/image/5.png" alt="">
+                </div>
+                <div class="alur1">
+                    <div class="desk-alur">
+                        <h1>Proses Seleksi</h1>
+                        <p>Setelah data peserta didik dinyatakan valid melalui proses verifikasi dan validasi, berkas pendaftaran akan diproses lebih lanjut sebagai peserta seleksi Penerimaan Peserta Didik Baru (PPDB).</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div style="width: 100vw;">
-            <div class="number">
-                <label>5</label>
-            </div>
-        </div>
-        <div class=" container alur-content">
-            <div class="alur2-1">
-                <div class="desk-alur-1">
-                    <h1>Pengumuman Seleksi</h1>
-                    <p>Pengumuman penerimaan peserta didik yang sudah terseleksi, dan dinyatakan lolos 100%</p>
+            <div class=" container alur-content">
+                <div class="alur1">
+                    <div class="desk-alur-1">
+                        <h1>Pengumuman Seleksi</h1>
+                        <p>Setelah proses seleksi selesai dan peserta didik dinyatakan lolos, pihak sekolah akan mengumumkan penerimaan peserta didik yang telah terseleksi.</p>
+                    </div>
+                </div>
+                <div class="alur2">
+                    <img src="../../assets/image/6.png" alt="">
                 </div>
             </div>
-            <div class="alur1-1">
-                <img src="../../assets/image/shortlist.png" alt="">
-            </div>
-        </div>
-        <div style="width: 100vw;">
-            <div class="number">
-                <label>6</label>
-            </div>
-        </div>
-        <div class="container alur-content">
-            <div class="alur1">
-                <img src="../../assets/image/website1.png" alt="">
-            </div>
-            <div class="alur2">
-                <div class="desk-alur">
-                    <h1>Daftar Ulang</h1>
-                    <p>Peserta yang sudah lolos harus melakukan pendaftaran ulang ke sekolah</p>
+            <div class="container alur-content">
+                <div class="alur2">
+                    <img src="../../assets/image/7.png" alt="">
+                </div>
+                <div class="alur1">
+                    <div class="desk-alur">
+                        <h1>Daftar Ulang</h1>
+                        <p>Peserta yang sudah dinyatakan lolos seleksi diwajibkan untuk melakukan pendaftaran ulang ke sekolah. Tahap ini sangat penting untuk mengonfirmasi kehadiran dan komitmen peserta didik dalam memulai tahun ajaran baru.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div style="width: 100vw;">
-            <div class="number">
-                <label>7</label>
+        </template>
+        <template v-else>
+            <div class="container alur-content">
+                <div class="alur2">
+                    <img src="../../assets/image/1.png" alt="">
+                </div>
+                <div class="alur1">
+                    <div class="desk-alur">
+                        <h1>Mempersiapkan Berkas</h1>
+                        <p>Proses ini melibatkan pengumpulan dokumen-dokumen penting yang diperlukan untuk peserta didik dalam memenuhi persyaratan pendaftaran.</p>
+                    </div>
+                </div>
             </div>
-        </div>
+            <div class="container alur-content">
+                <div class="alur1">
+                    <div class="desk-alur-1">
+                        <h1>Mendaftar Secara Online</h1>
+                        <p>Peserta didik melakukan pendaftaran secara online, dengan menginputkan token yang sudah didapatkan sebelumnya, dan mengisi data dengan baik dan benar</p>
+                    </div>
+                </div>
+                <div class="alur2">
+                    <img src="../../assets/image/2-1.png" alt="">
+                </div>
+            </div>
+            <div class=" container alur-content">
+                <div class="alur2">
+                    <img src="../../assets/image/3-1.png" alt="">
+                </div>
+                <div class="alur1">
+                    <div class="desk-alur">
+                        <h1>Verifikasi Data</h1>
+                        <p>Pihak sekolah akan melakukan verifikasi dan validasi data. Langkah ini dilakukan untuk memastikan bahwa semua informasi yang diberikan oleh peserta didik sudah lengkap dan sesuai dengan persyaratan yang telah ditetapkan.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container alur-content">
+                <div class="alur1">
+                    <div class="desk-alur-1">
+                        <h1>Proses Seleksi</h1>
+                        <p>Setelah data peserta didik dinyatakan valid melalui proses verifikasi dan validasi, berkas pendaftaran akan diproses lebih lanjut sebagai peserta seleksi Penerimaan Peserta Didik Baru (PPDB).</p>
+                    </div>
+                </div>
+                <div class="alur2">
+                    <img src="../../assets/image/4-1.png" alt="">
+                </div>
+            </div>
+            <div class=" container alur-content">
+                <div class="alur2">
+                    <img src="../../assets/image/5-1.png" alt="">
+                </div>
+                <div class="alur1">
+                    <div class="desk-alur">
+                        <h1>Pengumuman Seleksi</h1>
+                        <p>Setelah proses seleksi selesai dan peserta didik dinyatakan lolos, pihak sekolah akan mengumumkan penerimaan peserta didik yang telah terseleksi.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container alur-content">
+                <div class="alur1">
+                    <div class="desk-alur-1">
+                        <h1>Daftar Ulang</h1>
+                        <p>Peserta yang sudah dinyatakan lolos seleksi diwajibkan untuk melakukan pendaftaran ulang ke sekolah. Tahap ini sangat penting untuk mengonfirmasi kehadiran dan komitmen peserta didik dalam memulai tahun ajaran baru.</p>
+                    </div>
+                </div>
+                <div class="alur2">
+                    <img src="../../assets/image/6-1.png" alt="">
+                </div>
+            </div>
+
+        </template>
     </div>
 
     <section id="daftar" data-aos="fade-up" >
@@ -407,6 +443,7 @@
                 searchText: '',
                 currentPage: 1,
                 pageSize: 5,
+                token: true,
 
                 data: [
                     {
@@ -800,41 +837,15 @@
 
     .alur-content {
         display: flex;
+        justify-content: center;
     }
 
-    .alur1{
-        width: 50%;
-        padding: 35px 0px 35px 0px;
+    .alur1, .alur2{
+        width: 40%;
+        padding: 15px 20px 15px 20px;
         display: flex;
         justify-content: center;
         align-items: center;
-        border-right: 4px dashed black;
-    }
-
-    .alur2 {
-        width: 50%;
-        padding: 35px 0px 35px 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .alur1-1{
-        width: 50%;
-        padding: 35px 0px 35px 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    }
-
-    .alur2-1 {
-        width: 50%;
-        padding: 35px 0px 35px 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-right: 4px dashed black;
     }
 
     .desk-alur-1 {
@@ -844,36 +855,15 @@
     .desk-alur h1,
     .desk-alur-1 h1{
         font-family: 'Calibre-semiBold';
-        /* margin-top: -10px; */
+        margin-top: 40px;
         margin-bottom: 0px;
         font-size: 23pt;
     }
 
     .desk-alur p,
     .desk-alur-1 p{
-        width: 400px;
+        width: 100%;
         font-size: 15pt;
-    }
-
-    .number {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        background: linear-gradient(to bottom, #067c7e 20%, #2ccf7e 100%) !important;
-        position: absolute;
-        z-index: 100;
-        margin-left: calc(100vw - 51.7vw);
-        margin-top: -150px;
-    }
-
-    .number label {
-        font-family: 'Calibre-semiBold';
-        font-size: 23pt;
-        color: white;
-        margin-top: 10px;
     }
 
     @media screen and (min-width: 0) and (max-width:359px){
@@ -992,6 +982,42 @@
             font-size: 23pt;
         }
 
+        .alur-content {
+            flex-direction: column;
+        }
+
+        .alur2{
+            order: 1;
+        }
+
+        .alur2 img {
+            width: 130px;
+        }
+
+        .alur1{
+            order: 2;
+        }
+        .alur1, .alur2{
+            width: 100%;
+            padding: 0px 0px 0px 0px; 
+        }
+
+        .desk-alur,
+        .desk-alur-1 {
+            text-align: center;
+        }
+
+        .desk-alur h1,
+        .desk-alur-1 h1{
+            margin-top:30px;
+            margin-bottom: 5px;
+            font-size: 17pt;
+        }
+
+        .desk-alur p,
+        .desk-alur-1 p{
+            font-size: 12pt;
+        }
 
     }
 

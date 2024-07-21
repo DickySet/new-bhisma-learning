@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import LandingPage from '../views/LandingPage/LandingPage.vue';
 import LoginPage from '../views/LoginPage/LoginPage.vue';
 import PPDBPage from '../views/PPDBPage/PPDBPage.vue';
+import PPDBRegistration from '../views/PPDBPage/PPDBRegistration.vue';
 import DashboardView from '../views/Dashboard/DashboardPage.vue'
 
 const router = createRouter({
@@ -22,6 +23,11 @@ const router = createRouter({
             name: 'PPDB',
             path: '/PPDB',
             component: PPDBPage
+        },
+        {
+            name: 'PPDB Registration',
+            path: '/PPDB-Registration',
+            component: PPDBRegistration
         },
         {
             path: '/dashboard',

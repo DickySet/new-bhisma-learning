@@ -24,14 +24,14 @@
                     <ul class="navbar-nav show mb-2 mb-lg-0">
                         <li class="nav-item">
                             <router-link to="/">
-                                <a class="nav-link cek" href="#statistic">Beranda</a>
+                                <a class="nav-link cek">Beranda</a>
                             </router-link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link cek" href="#kontak">Cek Pendaftaran</a>
+                            <a class="nav-link cek" href="#cekPendaftaran">Cek Pendaftaran</a>
                         </li>
                         <li class="nav-item">
-                            <router-link to="/login">
+                            <router-link to="/PPDB-Registration">
                                 <button class="nav">
                                     <a class="nav-link">Daftar</a>
                                 </button>
@@ -60,8 +60,8 @@
         </div>
     </section>
 
-    <section id="cekPendaftaran">
-        <div class="kotak3">
+    <section id="cekPendaftaran" data-aos="fade-up">
+        <div class="kotak3" data-aos="fade-up">
             <div class="text-center" style="width: 65%">
                 <h1>Cek Status Pendaftaran Siswa</h1>
                 <p>Lakukan cek sekala berkala agar informasi pendaftaran update</p>
@@ -93,7 +93,7 @@
 
     <div class="alur">
         <template v-if="token">
-            <div class="container alur-content">
+            <div class="container alur-content" data-aos="fade-up">
                 <div class="alur2">
                     <img src="../../assets/image/1.png" alt="">
                 </div>
@@ -104,7 +104,7 @@
                     </div>
                 </div>
             </div>
-            <div class=" container alur-content">
+            <div class=" container alur-content" data-aos="fade-up">
                 <div class="alur1">
                     <div class="desk-alur-1">
                         <h1>Melakukan Pembayaran</h1>
@@ -115,7 +115,7 @@
                     <img src="../../assets/image/2.png" alt="">
                 </div>
             </div>
-            <div class="container alur-content">
+            <div class="container alur-content" data-aos="fade-up">
                 <div class="alur2">
                     <img src="../../assets/image/3.png" alt="">
                 </div>
@@ -126,7 +126,7 @@
                     </div>
                 </div>
             </div>
-            <div class=" container alur-content">
+            <div class=" container alur-content" data-aos="fade-up">
                 <div class="alur1">
                     <div class="desk-alur-1">
                         <h1>Verifikasi Data</h1>
@@ -137,7 +137,7 @@
                     <img src="../../assets/image/4.png" alt="">
                 </div>
             </div>
-            <div class="container alur-content">
+            <div class="container alur-content" data-aos="fade-up">
                 <div class="alur2">
                     <img src="../../assets/image/5.png" alt="">
                 </div>
@@ -148,7 +148,7 @@
                     </div>
                 </div>
             </div>
-            <div class=" container alur-content">
+            <div class=" container alur-content" data-aos="fade-up">
                 <div class="alur1">
                     <div class="desk-alur-1">
                         <h1>Pengumuman Seleksi</h1>
@@ -159,7 +159,7 @@
                     <img src="../../assets/image/6.png" alt="">
                 </div>
             </div>
-            <div class="container alur-content">
+            <div class="container alur-content" data-aos="fade-up">
                 <div class="alur2">
                     <img src="../../assets/image/7.png" alt="">
                 </div>
@@ -172,7 +172,7 @@
             </div>
         </template>
         <template v-else>
-            <div class="container alur-content">
+            <div class="container alur-content" data-aos="fade-up">
                 <div class="alur2">
                     <img src="../../assets/image/1.png" alt="">
                 </div>
@@ -183,7 +183,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container alur-content">
+            <div class="container alur-content" data-aos="fade-up">
                 <div class="alur1">
                     <div class="desk-alur-1">
                         <h1>Mendaftar Secara Online</h1>
@@ -194,7 +194,7 @@
                     <img src="../../assets/image/2-1.png" alt="">
                 </div>
             </div>
-            <div class=" container alur-content">
+            <div class=" container alur-content" data-aos="fade-up">
                 <div class="alur2">
                     <img src="../../assets/image/3-1.png" alt="">
                 </div>
@@ -205,7 +205,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container alur-content">
+            <div class="container alur-content" data-aos="fade-up">
                 <div class="alur1">
                     <div class="desk-alur-1">
                         <h1>Proses Seleksi</h1>
@@ -216,7 +216,7 @@
                     <img src="../../assets/image/4-1.png" alt="">
                 </div>
             </div>
-            <div class=" container alur-content">
+            <div class=" container alur-content" data-aos="fade-up">
                 <div class="alur2">
                     <img src="../../assets/image/5-1.png" alt="">
                 </div>
@@ -227,7 +227,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container alur-content">
+            <div class="container alur-content" data-aos="fade-up">
                 <div class="alur1">
                     <div class="desk-alur-1">
                         <h1>Daftar Ulang</h1>

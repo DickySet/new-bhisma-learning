@@ -51,8 +51,7 @@ h6 {
 input,
 textarea {
     width: 100%;
-    margin-bottom: 10px;
-    padding: 10px 0px 5px 15px;
+    padding: 8px 0px 2px 5px;
     border-radius: 5px;
     border: none;
     font-size: 13pt;
@@ -63,14 +62,31 @@ textarea {
 
 select {
     width: 100%;
-    margin-bottom: 10px;
-    padding: 15px 0px 10px 15px;
+    padding: 12px 0px 8px 5px;
     border-radius: 5px;
     border: none;
     font-size: 13pt;
     background: #eeeeee;
     border-bottom: 2px solid black;
     outline: none;
+}
+
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: orange;
+    padding: 1px 10px 0px 10px;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+    background: #067c7e;
+    color: white;
+    transition: background .2s ease-in-out;
 }
 
 .icon {

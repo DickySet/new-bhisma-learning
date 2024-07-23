@@ -34,7 +34,7 @@
             </div>
         </div>
     </div>
-    <div class="card border-0 mt-3" data-aos="fade-up">
+    <div class="card border-0 mt-3" data-aos="fade-left">
         <div class="card-body">
             <div style="padding: 20px 20px 0px 20px;">
                 <TableComponent 

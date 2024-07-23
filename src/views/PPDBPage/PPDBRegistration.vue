@@ -10,7 +10,7 @@
             </div>
         </div>
         
-        <div class="alert bg-warning fade show d-flex justify-content-between mt-3" role="alert" data-aos="fade-up">
+        <div class="alert bg-warning fade show d-flex justify-content-between mt-3" role="alert">
             <label class="p-1">Pembayaran bisa langsung hubungi pihak sekolah</label>
             <button style="background: none; border: none;" type="button" data-bs-dismiss="alert" aria-label="Close">
                 <label aria-hidden="true">x</label>
@@ -39,16 +39,14 @@
                                 </router-link>
                             </div>
     
-                            <div :hidden="token_show">
-                                <div class="token">
-                                    <label>Token <b>Registrasi :</b></label>
-                                    <input type="text" style="width: 64%" placeholder="Masukan Token">
-                                    <button class="btn" type="submit" style="background-color: orange; color:black">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                                        </svg>
-                                    </button>
-                                </div>
+                            <div class="token" :hidden="token_show">
+                                <label>Token <b>Registrasi :</b></label>
+                                <input type="text" style="width: 64%" placeholder="Masukan Token">
+                                <button class="btn" type="submit" style="background-color: orange; color:black">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                                    </svg>
+                                </button>
                             </div>
     
                         </div>
@@ -58,7 +56,7 @@
         </div>
 
         <div class="form mt-3 mb-5">
-            <div class="card shadow border-0">
+            <div class="card shadow border-0" style="width: 100%">
                 <div class="card-body">
 
                     <!-- Opsi Header Input -->

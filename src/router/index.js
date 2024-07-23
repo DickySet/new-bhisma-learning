@@ -5,6 +5,7 @@ import LoginPage from '../views/LoginPage/LoginPage.vue';
 import PPDBPage from '../views/PPDBPage/PPDBPage.vue';
 import PPDBRegistration from '../views/PPDBPage/PPDBRegistration.vue';
 import DashboardView from '../views/Dashboard/DashboardPage.vue'
+import ProfilePage from '../views/MainPage/ProfilePage.vue'
 
 const router = createRouter({
     history: createWebHistory(),
@@ -33,6 +34,11 @@ const router = createRouter({
             path: '/dashboard',
             name: 'dashboard',
             component: DashboardView
+        },
+        {
+            path: '/profile',
+            name: 'profile',
+            component: ProfilePage
         },
     ]
 })

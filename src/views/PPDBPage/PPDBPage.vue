@@ -62,8 +62,8 @@
 
     <section id="cekPendaftaran" data-aos="fade-up">
         <div class="kotak3" data-aos="fade-up">
-            <div class="text-center" style="width: 65%">
-                <h1>Cek Status Pendaftaran Siswa</h1>
+            <div class="text-center" style="width: 60%">
+                <h1 class="">Cek Status Pendaftaran Siswa</h1>
                 <p>Lakukan cek sekala berkala agar informasi pendaftaran update</p>
                 <div class="input">
                     <div class="svg">
@@ -71,7 +71,7 @@
                             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                         </svg>
                     </div>
-                    <input type="text" placeholder="Masukan NIS/NISN Peserta">
+                    <input style="margin-top:0px" type="text" placeholder="Masukan NIS/NISN Peserta">
                     <div class="button" data-bs-toggle="modal" data-bs-target="#detailStudent">
                         <button> Search</button>
                     </div>
@@ -254,54 +254,20 @@
     </section>
 
     <section id="dataPendaftar" data-aos="fade-up">
-        <div class="container pb-4">
-            <div class="d-flex" style="gap: 10px">
-                <div class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" style="color: white; font-weight: bold;" width="17" height="17" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                    </svg>
-                </div>
-                <input class="search" type="text" v-model="searchText" placeholder="Masukan Nama Pendaftar">
+        <div class="container">
+            <div style="padding: 20px 20px 0px 20px;">
+                <TableComponent 
+                    :headers="tableHeaders" 
+                    :data="tableData" 
+                    :display-columns="displayColums"
+                    :actionsTable="tableActions"
+                    :actions="actions"
+                    :search-column="'name'"
+                    :search-placeholder="'Masukan Nama Peserta Didik'"
+                    @actionTable-click="handleActionTableClick" 
+                    @action-click="handleActionClick" 
+                />
             </div>
-
-            <div class="table">
-                <table style="width: 100%;">
-                    <thead>
-                        <tr>
-                            <th>No</th>
-                            <th>No Registrasi</th>
-                            <th>Sekolah Asal</th>
-                            <th>Pendaftar</th>
-                            <th>Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- <tr v-for="(recap1, index) in data"> -->
-                        <tr v-for="(recap1, index) in paginatedData()">
-                            <td>{{index+1 + (currentPage - 1) * pageSize}}</td>
-                            <td>{{recap1.no_registration}}</td>
-                            <td>{{recap1.school_before}}</td>
-                            <td>{{recap1.name}}</td>
-                            <td>{{recap1.status}}</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="pagination">
-                <button @click="previousPage" :disabled="currentPage == 1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
-                    </svg>
-                </button>
-                <span>Page <b>{{ currentPage }}</b> of <b>{{ totalPages }}</b></span>
-                <button @click="nextPage" :disabled="currentPage == totalPages">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                    </svg>
-                </button>
-            </div>
-
         </div>
     </section>
 
@@ -377,7 +343,7 @@
                                         <div class="alert bg-warning font-weight-bold" role="alert">
                                             <label style="font-weight: bold; font-size: 13pt">Data Peserta Didik</label>
                                         </div>
-                                        <div class="form-group">
+                                        <div class="form-group mb-2">
                                             <label>Pilih Jurusan</label>
                                             <select>
                                                 <option value="0">Pilih Jurusan</option>
@@ -385,25 +351,25 @@
                                                 <option value="2">IPS</option>
                                             </select>
                                         </div>
-                                        <div class="form-group">
+                                        <div class="form-group mb-2">
                                             <label>Nama Lengkap</label>
                                             <input placeholder="Masukan Nama Lengkap" type="text">
                                         </div>
-                                        <div class="form-group">
+                                        <div class="form-group mb-2">
                                             <label>Tempat Lahir</label>
                                             <input placeholder="Masukan Tempat Lahir" type="text">
                                         </div>
                                         <div class="d-flex" style="gap: 10px">
-                                            <div class="form-group" style="width: 50%">
+                                            <div class="form-group mb-2" style="width: 50%">
                                                 <label>No Induk Keluarga</label>
                                                 <input placeholder="Masukan No Induk Keluarga" type="text">
                                             </div>
-                                            <div class="form-group" style="width: 50%">
+                                            <div class="form-group mb-2" style="width: 50%">
                                                 <label>No Kartu Keluarga</label>
                                                 <input placeholder="Masukan No Kartu Keluarga" type="text">
                                             </div>
                                         </div>
-                                        <div class="form-group">
+                                        <div class="form-group mb-2">
                                             <label>Nama Lengkap</label>
                                             <textarea placeholder="Masukan Nama Lengkap" rows="3" type="text"></textarea>
                                         </div>
@@ -427,11 +393,13 @@
 
 <script>
 
-    import Footer from '../LandingPage/Footer.vue'
+    import Footer from '../LandingPage/Footer.vue';
+    import TableComponent from '../../components/Table.vue';
 
     export default {
         components:{
-            Footer
+            Footer,
+            TableComponent
         },
         data(){
             return {
@@ -440,12 +408,10 @@
                 dataSiswa: 1678,
                 dataUjian: 13564,
 
-                searchText: '',
-                currentPage: 1,
-                pageSize: 5,
                 token: true,
-
-                data: [
+                tableHeaders: ['No Registrasi', 'Sekolah Asal', 'Nama Pendaftar', 'Status'],
+                displayColums: ['no_registration', 'school_before', 'name', 'status'],
+                tableData: [
                     {
                         no_registration: 'IPA000001',
                         school_before: 'SMAN 1 Parahyangan',
@@ -512,7 +478,7 @@
                         name: 'Susi Susanti',
                         status: 'Proses',
                     },
-                ]
+                ],
             }
         },
         mounted(){
@@ -761,6 +727,7 @@
     }
 
     .input input {
+        width: 75%;
         height: 50px;
         border: none;
         background: white;
@@ -769,7 +736,7 @@
     }
 
     .input .button {
-        width: 25%;
+        width: 15%;
     }
     
     .input .button button {
@@ -943,14 +910,6 @@
             height: 10px;
         }
 
-        .input input {
-            width: 60%;
-            height: 20px;
-            border: none;
-            background: white;
-            font-size: 11pt;
-            margin-top: 8px;
-        }
 
         .input .button {
             width: 25%;

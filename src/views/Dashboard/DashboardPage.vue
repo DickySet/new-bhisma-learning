@@ -92,13 +92,8 @@
 
         <div class="card border-0 shadow mt-3">
             <div class="card-body">
-                <div class="d-flex align-items-center" style="padding: 0px 20px 0px 20px; gap: 15px;">
-                    <div class="kotak-icon-title shadow"></div>
-                    <div style="margin-top: 20px">
-                        <label class="title">Web Access</label>
-                        <p class="title-description">Menampilkan jumlah orang yang mengakses web</p>
-                    </div>
-                </div>
+                
+                <Title :title="title" :subTitle="subTitle"/>
 
                 <div style="padding: 0px 20px 0px 20px;">
                     <WebAccessChart />
@@ -110,15 +105,18 @@
 <script>
 
     import WebAccessChart from '../../components/Chart/WebAccessChart.vue';
+    import Title from '../../components/TitlePage.vue';
 
     export default {
 
         components:{
-            WebAccessChart
+            WebAccessChart,
+            Title
         },
         data(){
             return {
-                
+                title: 'Web Access',
+                subTitle: 'Menampilkan jumlah orang yang mengakses web',
             }
         },
     }

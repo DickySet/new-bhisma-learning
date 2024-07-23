@@ -36,7 +36,8 @@ button.button-tambah {
     height: 40px;
     /* font-weight: bold; */
     color: white;
-    background-image: linear-gradient(to bottom, #EE427D 0%, #A8144A 100%);
+    /* background-image: linear-gradient(to bottom, #EE427D 0%, #A8144A 100%); */
+    background-image: linear-gradient(to bottom, #489DEC 0%, #00387F 100%);
     cursor: pointer;
     transition: all 0.4s ease;
 }

@@ -5,14 +5,14 @@
         <aside id="sidebar" class="js-sidebar">
 
             <router-link to="/dashboard" style="text-decoration: none; color: black;">
-                <div class="d-flex justify-content-center align-items-center title-dashboard" style="gap: 18px; cursor: pointer; margin-bottom: -15px">
+                <div class="d-flex justify-content-center align-items-center title-dashboard" style="gap: 18px; cursor: pointer; margin-bottom: -5px">
                     <img src="../../assets/image/logo.png" width="40">
                     <h6 style="cursor:pointer; font-size: 14pt; margin-top: 20px;"><b>Bhisma Interaktif</b></h6>
                 </div>
             </router-link>
             <hr>
 
-            <div class="nav-item" style="margin-top: -10px">
+            <div class="nav-item" style="margin-top: -5px">
                 <template v-for="(header, a) in data_header" :key="header.menu_name">
                     <label style="margin-bottom: 5px; margin-top: 10px;"><b>{{ header.menu_name }}</b></label>
 
@@ -23,12 +23,14 @@
                         </div>
                         <div class="collapse" :id="'collapseExample'+a+b">
                             <template v-for="(sub_header_children, b) in sub_header.data_sub_children" :key="sub_header_children.menu_name">
-                                <div class="d-flex align-items-center menu1">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-                                    </svg>
-                                    <label style="margin-top: 5px">{{ sub_header_children.menu_name }}</label>
-                                </div>
+                                <router-link to="/profile">
+                                    <div class="d-flex align-items-center menu1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                        </svg>
+                                        <label style="margin-top: 5px; cursor: pointer">{{ sub_header_children.menu_name }}</label>
+                                    </div>
+                                </router-link>
                             </template>
                         </div>
                     </template>
@@ -50,7 +52,7 @@
                         </p>
                         <h5 style="margin-top: -15px; text-transform: capitalize"><b>{{ $route.name }}</b></h5>
                     </div>
-                    <div style="cursor:pointer; margin-top: -10px" id="sidebar-toggle">
+                    <div style="cursor:pointer; margin-top: 5px" id="sidebar-toggle">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
                         </svg>
@@ -526,7 +528,8 @@
         bottom: 0;
         padding: 15px 0px 0px 0px;
         height: 40px;
-        background-color: #F0F2F5;
+        /* background-color: #F0F2F5; */
+        background-color: #F8F9FA;
     }
 
     footer.mainPage p{
@@ -534,7 +537,8 @@
     }
 
     #main {
-        background-color: #F0F2F5;
+        /* background-color: #F0F2F5; */
+        background-color: #F8F9FA;
     }
 
     .dropdown-menu {
@@ -551,7 +555,7 @@
             min-width: 264px;
         padding: 10px 20px 20px 20px;
         overflow-y: auto;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); */
         transition: all 0.35s ease-in-out;
     }
 
@@ -603,7 +607,8 @@
     .menu .icon {
         transition: all 0.3s ease;
         /* background-color: #F8F9FA; */
-        background-image: linear-gradient(to bottom, #489DEC 0%, #00387F 100%);
+        /* background-image: linear-gradient(to bottom, #489DEC 0%, #00387F 100%); */
+        background-image: linear-gradient(to right, #067c7e 0%, #2ccf7e 100%);
         width: 34px;
         height: 34px;
         display: flex;
@@ -648,7 +653,7 @@
         /* font-weight: bold; */
         transition: all 0.3s ease;
         cursor: pointer;
-        font-size: 11.5pt;
+        font-size: 12pt;
     }
 
     .menu:hover label {
@@ -667,7 +672,8 @@
         /* border-radius: 15px; */
         height: 53px;
         /* top: 10px; */
-        background-color: #F0F2F5;
+        /* background-color: #F0F2F5; */
+        background-color: #F8F9FA;
         position: sticky;
         top: 0;
         z-index: 1000;
@@ -696,6 +702,10 @@
         gap: 15px;
         width: 95%;
         margin-right: 10px;
+    }
+
+    .kotak_1_1 {
+        margin-top: 15px;
     }
 
     .kotak_1 p {

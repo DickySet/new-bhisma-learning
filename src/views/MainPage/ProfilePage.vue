@@ -1,6 +1,6 @@
 <template>
 
-    <div class="card border-0">
+    <div class="card border-0" data-aos="fade-up">
         <div class="card-body">
             <div style="padding: 0px 20px 0px 20px;">
                 <Title :title="title" :subTitle="subTitle" />
@@ -34,7 +34,7 @@
             </div>
         </div>
     </div>
-    <div class="card border-0  mt-3">
+    <div class="card border-0 mt-3" data-aos="fade-up">
         <div class="card-body">
             <div style="padding: 20px 20px 0px 20px;">
                 <TableComponent 
@@ -67,8 +67,8 @@ export default {
         return {
             title: 'Data Table',
             subTitle: 'This is a sample data table',
-            tableHeaders: ['No Registrasi', 'Nama Pendaftar', 'Status'],
-            displayColums: ['no_registration', 'name', 'status'],
+            tableHeaders: ['No Registrasi', 'Sekolah Asal', 'Nama Pendaftar', 'Status'],
+            displayColums: ['no_registration', 'school_before', 'name', 'status'],
             tableData: [
                 {
                     no_registration: 'IPA000001',

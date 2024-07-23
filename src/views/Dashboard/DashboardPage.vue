@@ -92,11 +92,12 @@
 
         <div class="card border-0 mt-3">
             <div class="card-body">
-
-                <Title :title="title" :subTitle="subTitle"/>
-
                 <div style="padding: 0px 20px 0px 20px;">
+                    
+                    <Title :title="title" :subTitle="subTitle"/>
+    
                     <WebAccessChart />
+                    
                 </div>
             </div>
         </div>

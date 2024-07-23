@@ -8,7 +8,7 @@ import DashboardView from '../views/Dashboard/DashboardPage.vue'
 import ProfilePage from '../views/MainPage/ProfilePage.vue'
 
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
         {
             name: 'Landing Page',

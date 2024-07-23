@@ -92,7 +92,7 @@
 
         <div class="card border-0 mt-3">
             <div class="card-body">
-                <div style="padding: 0px 20px 0px 20px;">
+                <div class="padding-content">
                     
                     <Title :title="title" :subTitle="subTitle"/>
     

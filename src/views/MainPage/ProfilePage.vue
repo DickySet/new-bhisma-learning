@@ -1,8 +1,8 @@
 <template>
 
-    <div class="card border-0" data-aos="fade-up">
+    <div class="card border-0">
         <div class="card-body">
-            <div style="padding: 0px 20px 0px 20px;">
+            <div class="padding-content">
                 <Title :title="title" :subTitle="subTitle" />
 
                 <div class="d-flex mb-3" style="gap: 10px; flex-wrap: wrap">
@@ -34,9 +34,9 @@
             </div>
         </div>
     </div>
-    <div class="card border-0 mt-3" data-aos="fade-left">
+    <div class="card border-0 mt-3">
         <div class="card-body">
-            <div style="padding: 20px 20px 0px 20px;">
+            <div class="padding-content">
                 <TableComponent 
                     :headers="tableHeaders" 
                     :data="tableData" 

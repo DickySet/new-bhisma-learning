@@ -139,11 +139,19 @@ input[type=file]::file-selector-button:hover {
     cursor: pointer;
 }
 
+.padding-content {
+    padding: 0px 20px 0px 20px;
+}
+
 @media screen and (min-width: 0) and (max-width:359px) {
 
     label,
     p {
         font-size: 11pt;
+    }
+
+    .padding-content {
+        padding: 0px 0px 0px 0px;
     }
 }
 
@@ -151,45 +159,22 @@ input[type=file]::file-selector-button:hover {
 
     label,
     p {
-        font-size: 11pt;
+        font-size: 10pt;
     }
 
     input,
     textarea,
     select {
-        font-size: 11pt;
-    }
-
-    table thead tr th {
-        font-size: 11pt;
-        padding: 10px;
-        width: 100%;
-    }
-
-    table tbody tr td {
-        font-size: 11pt;
-        padding: 10px;
-        width: 100%;
-    }
-
-    .table {
-        width: 100%;
-        overflow: auto;
+        font-size: 10pt;
     }
 
     .icon {
-        width: 40px;
-        height: 40px;
-        border-radius: 10px;
-    }
-
-    input.search {
-        width: 150px;
-        font-size: 11pt;
-    }
-
-    .pagination button {
         width: 35px;
         height: 35px;
+        border-radius: 5px;
+    }
+
+    .padding-content {
+        padding: 0px 0px 0px 0px;
     }
 }

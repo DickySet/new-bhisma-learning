@@ -90,9 +90,9 @@
             </div>
         </div>
 
-        <div class="card border-0 shadow mt-3">
+        <div class="card border-0 mt-3">
             <div class="card-body">
-                
+
                 <Title :title="title" :subTitle="subTitle"/>
 
                 <div style="padding: 0px 20px 0px 20px;">
@@ -143,7 +143,7 @@
   flex: 1 1 200px;
   /* height: 100px; */
   border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); */
 }
 
 .isikotak0 {

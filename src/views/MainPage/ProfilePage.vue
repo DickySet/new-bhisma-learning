@@ -1,6 +1,6 @@
 <template>
 
-    <div class="card border-0 mt-3">
+    <div class="card border-0">
         <div class="card-body">
             <div style="padding: 0px 20px 0px 20px;">
                 <Title :title="title" :subTitle="subTitle" />

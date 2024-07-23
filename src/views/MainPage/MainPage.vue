@@ -518,7 +518,7 @@
 <style>
 
     .isi {
-        height: calc(100vh - 125px);
+        height: calc(100vh - 141px);
         /* height: auto; */
         overflow-y: auto;
     }
@@ -667,10 +667,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 15px;
+        margin-top: 8px;
+        margin-bottom: 8px;
         padding: 0px 0px 0px 15px;
         /* border-radius: 15px; */
-        height: 53px;
+        height: 70px;
         /* top: 10px; */
         /* background-color: #F0F2F5; */
         background-color: #F8F9FA;

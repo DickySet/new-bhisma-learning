@@ -23,7 +23,7 @@
                         </div>
                         <div class="collapse" :id="'collapseExample'+a+b">
                             <template v-for="(sub_header_children, b) in sub_header.data_sub_children" :key="sub_header_children.menu_name">
-                                <router-link to="/profile">
+                                <router-link :to="'/'+sub_header_children.menu_path">
                                     <div class="d-flex align-items-center menu1">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
                                             <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
@@ -116,8 +116,8 @@
                                         </svg>`,
                                 data_sub_children: [
                                     {
-                                        menu_name: "Profile",
-                                        menu_path: "profile"
+                                        menu_name: "Crud Page",
+                                        menu_path: "crud"
                                     },
                                     {
                                         menu_name: "Examination",

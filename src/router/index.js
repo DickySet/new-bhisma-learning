@@ -5,7 +5,8 @@ import LoginPage from '../views/LoginPage/LoginPage.vue';
 import PPDBPage from '../views/PPDBPage/PPDBPage.vue';
 import PPDBRegistration from '../views/PPDBPage/PPDBRegistration.vue';
 import DashboardView from '../views/Dashboard/DashboardPage.vue'
-import ProfilePage from '../views/MainPage/ProfilePage.vue'
+import CrudPage from '../views/MainPage/CrudPage.vue'
+import Examination from '../views/Examination/Examination.vue'
 
 const router = createRouter({
     history: createWebHistory(),
@@ -31,15 +32,21 @@ const router = createRouter({
             component: PPDBRegistration
         },
         {
-            path: '/dashboard',
             name: 'dashboard',
+            path: '/dashboard',
             component: DashboardView
         },
         {
-            path: '/profile',
-            name: 'profile',
-            component: ProfilePage
+            name: 'crud',
+            path: '/crud',
+            component: CrudPage
         },
+        {
+            name: 'examination',
+            path: '/examination',
+            component: Examination
+        },
+
     ]
 })
 

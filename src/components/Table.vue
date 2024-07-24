@@ -1,6 +1,6 @@
 <template>
 
-    <div class="d-flex justify-content-between">
+    <div class="d-flex justify-content-between mt-3">
         <div class="d-flex" style="gap: 10px">
             <div class="icon">
                 <svg xmlns="http://www.w3.org/2000/svg" style="color: white; font-weight: bold;" width="17" height="17" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
@@ -73,11 +73,11 @@
         props: {
             headers: {
                 type: Array,
-                required: true
+                default: () => []
             },
             data: {
                 type: Array,
-                required: true
+                default: () => []
             },
             actionsTable: {
                 type: Array,

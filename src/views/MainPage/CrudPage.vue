@@ -6,19 +6,19 @@
                 <Title :title="title" :subTitle="subTitle" />
 
                 <div class="filtering">
-                    <div class="filtering-form">
+                    <div class="form-filtering">
                         <label>Tingkat</label>
                         <select>
                             <option value="0">Pilih Tingkat</option>
                         </select>
                     </div>
-                    <div class="filtering-form">
+                    <div class="form-filtering">
                         <label>Kelas</label>
                         <select>
                             <option value="0">Pilih Kelas</option>
                         </select>
                     </div>
-                    <div class="filtering-form">
+                    <div class="form-filtering">
                         <label>Sub Kelas</label>
                         <select>
                             <option value="0">Pilih Sub Kelas</option>

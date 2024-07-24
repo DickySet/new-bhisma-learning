@@ -1,5 +1,5 @@
 <template>
-    <div class="d-flex align-items-center" style="gap: 15px; margin-top: 15px">
+    <div class="d-flex align-items-center" style="gap: 15px;">
         <div class="kotak-icon-title shadow"></div>
         <div style="margin-top: 25px">
             <h5 style="margin-bottom: 0px">{{title}}</h5>

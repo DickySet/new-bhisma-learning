@@ -300,163 +300,163 @@
                         ]
 
                     },
-                    {
-                        menu_name: 'Data Sekolah',
-                        sub_menu:
-                        [
-                            {
-                                sub_menu_name: 'Kesiswaan',
-                                icon: ` <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
-                                            <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
-                                        </svg>`,
-                                data_sub_children: [
-                                    {
-                                        menu_name: "Kelas",
-                                        menu_path: "mapping/grade-level-subjects",
-                                        icon: "fas fa-school"
-                                    },
-                                    {
-                                        menu_name: "Distribusi Siswa Kelas",
-                                        menu_path: "course_type_school",
-                                        icon: "fas fa-school"
-                                    },
-                                    {
-                                        menu_name: "Daftar Kode kelas",
-                                        menu_path: "teacher_teaching_class_admin",
-                                        icon: "fas fa-school"
-                                    },
-                                    {
-                                        menu_name: "Kelola Data Siswa",
-                                        menu_path: "curriculum_class_admin",
-                                        icon: "fas fa-school"
-                                    },
-                                ]
-                            },
-                            {
-                                sub_menu_name: 'Pengajar',
-                                icon: ` <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-workspace" viewBox="0 0 16 16">
-                                            <path d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
-                                            <path d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.4 5.4 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2z"/>
-                                        </svg>`,
-                                data_sub_children: [
-                                    {
-                                        menu_name: "Guru",
-                                        menu_path: "exercises/1",
-                                        icon: "fas fa-school"
-                                    },
-                                    {
-                                        menu_name: "Wali Kelas",
-                                        menu_path: "resultexercises",
-                                        icon: "fas fa-school"
-                                    },
-                                    {
-                                        menu_name: "Beranda Walikelas",
-                                        menu_path: "teacher_teaching_class_admin",
-                                        icon: "fas fa-school"
-                                    },
-                                ]
-                            },
-                            {
-                                sub_menu_name: 'Ekstrakurikuler',
-                                icon: ` <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
-                                            <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
-                                            <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9 9 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.4 10.4 0 0 1-.524 2.318l-.003.011a11 11 0 0 1-.244.637c-.079.186.074.394.273.362a22 22 0 0 0 .693-.125m.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6-3.004 6-7 6a8 8 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a11 11 0 0 0 .398-2"/>
-                                        </svg>`,
-                                data_sub_children: [
-                                    {
-                                        menu_name: "Daftar Ekstrakurikuler",
-                                        menu_path: "exercises/1",
-                                        icon: "fas fa-school"
-                                    },
-                                    {
-                                        menu_name: "Jadwal Ekstrakurikuler",
-                                        menu_path: "resultexercises",
-                                        icon: "fas fa-school"
-                                    },
-                                    {
-                                        menu_name: "Laporan Ekstrakulikuler",
-                                        menu_path: "teacher_teaching_class_admin",
-                                        icon: "fas fa-school"
-                                    },
-                                ]
-                            },
-                        ]
+                    // {
+                    //     menu_name: 'Data Sekolah',
+                    //     sub_menu:
+                    //     [
+                    //         {
+                    //             sub_menu_name: 'Kesiswaan',
+                    //             icon: ` <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                    //                         <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                    //                     </svg>`,
+                    //             data_sub_children: [
+                    //                 {
+                    //                     menu_name: "Kelas",
+                    //                     menu_path: "mapping/grade-level-subjects",
+                    //                     icon: "fas fa-school"
+                    //                 },
+                    //                 {
+                    //                     menu_name: "Distribusi Siswa Kelas",
+                    //                     menu_path: "course_type_school",
+                    //                     icon: "fas fa-school"
+                    //                 },
+                    //                 {
+                    //                     menu_name: "Daftar Kode kelas",
+                    //                     menu_path: "teacher_teaching_class_admin",
+                    //                     icon: "fas fa-school"
+                    //                 },
+                    //                 {
+                    //                     menu_name: "Kelola Data Siswa",
+                    //                     menu_path: "curriculum_class_admin",
+                    //                     icon: "fas fa-school"
+                    //                 },
+                    //             ]
+                    //         },
+                    //         {
+                    //             sub_menu_name: 'Pengajar',
+                    //             icon: ` <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-workspace" viewBox="0 0 16 16">
+                    //                         <path d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                    //                         <path d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.4 5.4 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2z"/>
+                    //                     </svg>`,
+                    //             data_sub_children: [
+                    //                 {
+                    //                     menu_name: "Guru",
+                    //                     menu_path: "exercises/1",
+                    //                     icon: "fas fa-school"
+                    //                 },
+                    //                 {
+                    //                     menu_name: "Wali Kelas",
+                    //                     menu_path: "resultexercises",
+                    //                     icon: "fas fa-school"
+                    //                 },
+                    //                 {
+                    //                     menu_name: "Beranda Walikelas",
+                    //                     menu_path: "teacher_teaching_class_admin",
+                    //                     icon: "fas fa-school"
+                    //                 },
+                    //             ]
+                    //         },
+                    //         {
+                    //             sub_menu_name: 'Ekstrakurikuler',
+                    //             icon: ` <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
+                    //                         <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                    //                         <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9 9 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.4 10.4 0 0 1-.524 2.318l-.003.011a11 11 0 0 1-.244.637c-.079.186.074.394.273.362a22 22 0 0 0 .693-.125m.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6-3.004 6-7 6a8 8 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a11 11 0 0 0 .398-2"/>
+                    //                     </svg>`,
+                    //             data_sub_children: [
+                    //                 {
+                    //                     menu_name: "Daftar Ekstrakurikuler",
+                    //                     menu_path: "exercises/1",
+                    //                     icon: "fas fa-school"
+                    //                 },
+                    //                 {
+                    //                     menu_name: "Jadwal Ekstrakurikuler",
+                    //                     menu_path: "resultexercises",
+                    //                     icon: "fas fa-school"
+                    //                 },
+                    //                 {
+                    //                     menu_name: "Laporan Ekstrakulikuler",
+                    //                     menu_path: "teacher_teaching_class_admin",
+                    //                     icon: "fas fa-school"
+                    //                 },
+                    //             ]
+                    //         },
+                    //     ]
 
-                    },
-                    {
-                        menu_name: 'Akademik',
-                        sub_menu:
-                        [
-                            {
-                                sub_menu_name: 'Laporan Tugas',
-                                icon: ` <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
-                                            <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
-                                            <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9 9 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.4 10.4 0 0 1-.524 2.318l-.003.011a11 11 0 0 1-.244.637c-.079.186.074.394.273.362a22 22 0 0 0 .693-.125m.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6-3.004 6-7 6a8 8 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a11 11 0 0 0 .398-2"/>
-                                        </svg>`,
-                                data_sub_children: [
-                                    {
-                                        menu_name: "Tugas",
-                                        menu_path: "mapping/grade-level-subjects",
-                                        icon: "fas fa-school"
-                                    },
-                                ]
-                            },
-                            {
-                                sub_menu_name: 'Aktivitas Kelas',
-                                icon: ` <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
-                                            <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
-                                            <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9 9 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.4 10.4 0 0 1-.524 2.318l-.003.011a11 11 0 0 1-.244.637c-.079.186.074.394.273.362a22 22 0 0 0 .693-.125m.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6-3.004 6-7 6a8 8 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a11 11 0 0 0 .398-2"/>
-                                        </svg>`,
-                                data_sub_children: [
-                                    {
-                                        menu_name: "Jadwal Pelajaran",
-                                        menu_path: "exercises/1",
-                                        icon: "fas fa-school"
-                                    },
-                                    {
-                                        menu_name: "Tugas",
-                                        menu_path: "resultexercises",
-                                        icon: "fas fa-school"
-                                    },
-                                    {
-                                        menu_name: "Pengaturan Waktu Absen Jadwal",
-                                        menu_path: "teacher_teaching_class_admin",
-                                        icon: "fas fa-school"
-                                    },
-                                ]
-                            },
-                            {
-                                sub_menu_name: 'Rekap Pertemuan',
-                                icon: ` <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
-                                            <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
-                                            <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9 9 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.4 10.4 0 0 1-.524 2.318l-.003.011a11 11 0 0 1-.244.637c-.079.186.074.394.273.362a22 22 0 0 0 .693-.125m.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6-3.004 6-7 6a8 8 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a11 11 0 0 0 .398-2"/>
-                                        </svg>`,
-                                data_sub_children: [
-                                    {
-                                        menu_name: "Laporan Absensi Harian",
-                                        menu_path: "exercises/1",
-                                        icon: "fas fa-school"
-                                    },
-                                    {
-                                        menu_name: "Kehadiran Guru Pertemuan",
-                                        menu_path: "resultexercises",
-                                        icon: "fas fa-school"
-                                    },
-                                    {
-                                        menu_name: "Kehadiran Siswa Pertemuan",
-                                        menu_path: "teacher_teaching_class_admin",
-                                        icon: "fas fa-school"
-                                    },
-                                    {
-                                        menu_name: "Kehadiran Staff (Harian)",
-                                        menu_path: "curriculum_class_admin",
-                                        icon: "fas fa-school"
-                                    },
-                                ]
-                            },
-                        ]
+                    // },
+                    // {
+                    //     menu_name: 'Akademik',
+                    //     sub_menu:
+                    //     [
+                    //         {
+                    //             sub_menu_name: 'Laporan Tugas',
+                    //             icon: ` <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
+                    //                         <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                    //                         <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9 9 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.4 10.4 0 0 1-.524 2.318l-.003.011a11 11 0 0 1-.244.637c-.079.186.074.394.273.362a22 22 0 0 0 .693-.125m.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6-3.004 6-7 6a8 8 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a11 11 0 0 0 .398-2"/>
+                    //                     </svg>`,
+                    //             data_sub_children: [
+                    //                 {
+                    //                     menu_name: "Tugas",
+                    //                     menu_path: "mapping/grade-level-subjects",
+                    //                     icon: "fas fa-school"
+                    //                 },
+                    //             ]
+                    //         },
+                    //         {
+                    //             sub_menu_name: 'Aktivitas Kelas',
+                    //             icon: ` <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
+                    //                         <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                    //                         <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9 9 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.4 10.4 0 0 1-.524 2.318l-.003.011a11 11 0 0 1-.244.637c-.079.186.074.394.273.362a22 22 0 0 0 .693-.125m.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6-3.004 6-7 6a8 8 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a11 11 0 0 0 .398-2"/>
+                    //                     </svg>`,
+                    //             data_sub_children: [
+                    //                 {
+                    //                     menu_name: "Jadwal Pelajaran",
+                    //                     menu_path: "exercises/1",
+                    //                     icon: "fas fa-school"
+                    //                 },
+                    //                 {
+                    //                     menu_name: "Tugas",
+                    //                     menu_path: "resultexercises",
+                    //                     icon: "fas fa-school"
+                    //                 },
+                    //                 {
+                    //                     menu_name: "Pengaturan Waktu Absen Jadwal",
+                    //                     menu_path: "teacher_teaching_class_admin",
+                    //                     icon: "fas fa-school"
+                    //                 },
+                    //             ]
+                    //         },
+                    //         {
+                    //             sub_menu_name: 'Rekap Pertemuan',
+                    //             icon: ` <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
+                    //                         <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                    //                         <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9 9 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.4 10.4 0 0 1-.524 2.318l-.003.011a11 11 0 0 1-.244.637c-.079.186.074.394.273.362a22 22 0 0 0 .693-.125m.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6-3.004 6-7 6a8 8 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a11 11 0 0 0 .398-2"/>
+                    //                     </svg>`,
+                    //             data_sub_children: [
+                    //                 {
+                    //                     menu_name: "Laporan Absensi Harian",
+                    //                     menu_path: "exercises/1",
+                    //                     icon: "fas fa-school"
+                    //                 },
+                    //                 {
+                    //                     menu_name: "Kehadiran Guru Pertemuan",
+                    //                     menu_path: "resultexercises",
+                    //                     icon: "fas fa-school"
+                    //                 },
+                    //                 {
+                    //                     menu_name: "Kehadiran Siswa Pertemuan",
+                    //                     menu_path: "teacher_teaching_class_admin",
+                    //                     icon: "fas fa-school"
+                    //                 },
+                    //                 {
+                    //                     menu_name: "Kehadiran Staff (Harian)",
+                    //                     menu_path: "curriculum_class_admin",
+                    //                     icon: "fas fa-school"
+                    //                 },
+                    //             ]
+                    //         },
+                    //     ]
 
-                    },
+                    // },
                     // {
                     //     menu_name: 'PPDB',
                     //     sub_menu:
@@ -608,7 +608,8 @@
         transition: all 0.3s ease;
         /* background-color: #F8F9FA; */
         /* background-image: linear-gradient(to bottom, #489DEC 0%, #00387F 100%); */
-        background-image: linear-gradient(to right, #067c7e 0%, #2ccf7e 100%);
+        background-image: linear-gradient(to bottom, #067c7e 0%, #2ccf7e 100%);
+        /* background-image: linear-gradient(to bottom, #3C3C43 0%, #1E1E1F 100%); */
         width: 34px;
         height: 34px;
         display: flex;

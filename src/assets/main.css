@@ -24,6 +24,7 @@ p {
 a {
     text-decoration: none;
     color: black;
+    font-size: 12.5pt;
 }
 
 h1,
@@ -46,6 +47,10 @@ textarea {
     background: #eeeeee;
     border-bottom: 2px solid black;
     outline: none;
+}
+
+input[type="radio"] {
+    width: 15px;
 }
 
 input.search {
@@ -101,7 +106,7 @@ input[type=file]::file-selector-button:hover {
     align-items: center;
     background-image: linear-gradient(to bottom, #3C3C43 0%, #1E1E1F 100%);
     border-radius: 8px;
-    margin-top:27px;
+    margin-top: 27px;
 }
 
 .icon {
@@ -164,10 +169,82 @@ input[type=file]::file-selector-button:hover {
 
 .filtering .form-filtering {
     width: 24%;
+    flex-grow: 1;
 }
 
 .filtering .form-filtering label {
     font-weight: bold;
+}
+
+.form-format {
+    display: flex;
+    gap: 15px;
+}
+
+.form-kiri,
+.form-kanan {
+    width: 50%;
+}
+
+.format {
+    width: 100%;
+    margin-bottom: 9px;
+    /* flex-grow: 1; */
+}
+
+.table {
+    width: 100%;
+    overflow: auto;
+}
+
+table thead tr th {
+    font-size: 12pt;
+    padding: 10px 15px 5px 15px;
+    text-align: center;
+    font-weight: bold;
+    /* background-color: #eeeeee !important; */
+    background-color: #F8F9FA !important;
+    color: black;
+}
+
+table tbody tr td {
+    font-size: 12pt;
+    padding: 10px 15px 5px 15px;
+    text-align: center;
+    border: none;
+    border-bottom: 0.5px solid #000000;
+    color: black;
+}
+
+table tbody tr:hover {
+    background-color: #F8F9FA;
+}
+
+
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    gap: 15px;
+}
+
+.pagination button {
+    width: 39px;
+    height: 39px;
+    cursor: pointer;
+    background-color: grey;
+    font-size: 11pt;
+    font-weight: bold;
+    color: white;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, #3C3C43 0%, #1E1E1F 100%);
+    border: none;
+}
+
+.pagination span {
+    height: 40px;
+    margin-top: 8px;
 }
 
 @media screen and (min-width: 0) and (max-width:359px) {
@@ -212,7 +289,7 @@ input[type=file]::file-selector-button:hover {
         border-radius: 8px;
         cursor: pointer;
     }
-    
+
     .icon-excel {
         width: 39px;
         height: 39px;
@@ -224,7 +301,7 @@ input[type=file]::file-selector-button:hover {
         border-radius: 8px;
         cursor: pointer;
     }
-    
+
     .icon-pdf {
         width: 39px;
         height: 39px;

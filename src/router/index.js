@@ -7,10 +7,17 @@ import PPDBRegistration from '../views/PPDBPage/PPDBRegistration.vue';
 import DashboardView from '../views/Dashboard/DashboardPage.vue'
 import CrudPage from '../views/MainPage/CrudPage.vue'
 import Examination from '../views/Examination/Examination.vue'
+import AddExamination from '../views/Examination/AddExamination.vue'
+import NotFoundView from '../views/NotFound/NotFoundPage.vue'
 
 const router = createRouter({
     history: createWebHistory(),
     routes: [
+        {
+            path: '/:pathMatch(.*)*',
+            name: 'Not Found',
+            component: NotFoundView
+        },
         {
             name: 'Landing Page',
             path: '/',
@@ -45,6 +52,11 @@ const router = createRouter({
             name: 'examination',
             path: '/examination',
             component: Examination
+        },
+        {
+            name: 'Add Examination',
+            path: '/add-examination',
+            component: AddExamination
         },
 
     ]

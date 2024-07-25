@@ -80,7 +80,7 @@ select {
     outline: none;
 }
 
-input[type=file]::file-selector-button {
+/* input[type=file]::file-selector-button {
     margin-right: 20px;
     border: none;
     background: orange;
@@ -90,12 +90,45 @@ input[type=file]::file-selector-button {
     font-weight: bold;
     cursor: pointer;
     transition: background .2s ease-in-out;
+    display: none;
 }
 
 input[type=file]::file-selector-button:hover {
     background: #067c7e;
     color: white;
     transition: background .2s ease-in-out;
+} */
+
+.button-wrapper {
+    position: relative;
+    width: 150px;
+    text-align: center;
+    margin: 20% auto;
+}
+
+.button-wrapper span.label {
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    width: 100%;
+    background: #00bfff;
+    cursor: pointer;
+    color: black;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+#upload {
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
 }
 
 .icon-filter {

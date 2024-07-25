@@ -208,15 +208,39 @@
 
                     </div>
                     <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-                        <div class="jarak">
-                            <h5>Data Pertanyaan Ujian</h5>
-                            <p>Silahkan membuat soal ujian dengan baik</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="jarak">
+                                <h5>Data Pertanyaan Ujian</h5>
+                                <p>Silahkan membuat soal ujian dengan baik</p>
+                            </div>
+                            <div class="d-flex" style="gap: 10px">
+                                <div class="icon" v-popover="'Hapus File Yang Diimport'">
+                                    <svg style="color: white" width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                        <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
+                                    </svg>
+                                </div>
+                                <div class="icon-pdf" v-popover="'Download Data Ujian Sementara'">
+                                    <svg  xmlns="http://www.w3.org/2000/svg" style="color: white" width="20" height="20" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16">
+                                        <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"/>
+                                    </svg>
+                                </div>
+                                <div class="icon-excel" v-popover="'Import dan Referensi Soal Ujian'" data-bs-toggle="modal" data-bs-target="#importSoal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="color: white" width="20" height="20" fill="currentColor" class="bi bi-file-earmark-arrow-up-fill" viewBox="0 0 16 16">
+                                        <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M6.354 9.854a.5.5 0 0 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 8.707V12.5a.5.5 0 0 1-1 0V8.707z"/>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="d-flex" style="gap: 15px">
                             <div class="card shadow border-0" style="width: 70%; height: auto">
                                 <div class="card-header">
-                                    <h5 style=" margin-top: 5px; margin-bottom: -3px">Daftar Isi Soal</h5>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 style=" margin-top: 5px; margin-bottom: -3px">Daftar Isi Soal</h5>
+                                        <svg v-popover="'Hapus Semua Soal'" width="18" height="18" xmlns="http://www.w3.org/2000/svg" style="cursor: pointer;color: red; margin-top: 10px" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                            <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
+                                        </svg>
+                                    </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="d-flex" style="gap: 10px">
@@ -237,18 +261,26 @@
                                                         <option value="6">True / False</option>
                                                     </select>
                                                 </div>
-                                                
+                                                <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" style="color: red; margin-top: 10px" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                                    <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
+                                                </svg>
                                             </div>
                                             
                                             <div style="background-image: linear-gradient(to bottom, #489DEC 0%, #00387F 100%); padding: 4px 0px 0px 10px">
-                                                <label class="text-white">Pertanyaan</label>
+                                                <label class="text-white">Pernyataan</label>
                                             </div>
 
-                                            <textarea rows="4" placeholder="Masukan Soal"></textarea>
+                                            <textarea rows="4" placeholder="Masukan Pernyataan"></textarea>
 
                                             <!-- SOAL PILIHAN GANDA -->
                                                 <template v-if="chooseVersion == 1">
                                                 
+                                                    <div style="background-image: linear-gradient(to bottom, #489DEC 0%, #00387F 100%); padding: 4px 0px 0px 10px">
+                                                        <label class="text-white">Pertanyaan</label>
+                                                    </div>
+
+                                                    <textarea rows="4" placeholder="Masukan Soal"></textarea>
+
                                                     <div class="d-flex mb-2">
                                                         <div style="width: 8%;margin-top: 8px">
                                                         </div>
@@ -290,9 +322,27 @@
                                                 </template>
                                             <!-- SOAL PILIHAN GANDA -->
 
+                                            <!-- SOAL ESSAY -->
+                                                <template v-if="chooseVersion == 2">
+                                                
+                                                    <div style="background-image: linear-gradient(to bottom, #489DEC 0%, #00387F 100%); padding: 4px 0px 0px 10px">
+                                                        <label class="text-white">Pertanyaan</label>
+                                                    </div>
+
+                                                    <textarea rows="4" placeholder="Masukan Soal"></textarea>
+
+                                                </template>
+                                            <!-- SOAL ESSAY -->
+
                                             <!-- SOAL PILIHAN GANDA KOMPLEKS -->
                                                 <template v-if="chooseVersion == 3">
                                                 
+                                                    <div style="background-image: linear-gradient(to bottom, #489DEC 0%, #00387F 100%); padding: 4px 0px 0px 10px">
+                                                        <label class="text-white">Pertanyaan</label>
+                                                    </div>
+
+                                                    <textarea rows="4" placeholder="Masukan Soal"></textarea>
+
                                                     <div class="d-flex mb-2">
                                                         <div style="width: 8%;margin-top: 8px">
                                                         </div>
@@ -549,88 +599,17 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card sticky-top shadow border-0" style="width: 30%; max-height: 330px; overflow: auto; cursor: pointer">
+                            <div class="card sticky-top shadow border-0" style="width: 30%; max-height: 330px; overflow: auto; cursor: pointer; z-index:0">
                                 <div class="card-header">
                                     <h5 style=" margin-top: 5px; margin-bottom: -3px">Daftar Nomor Soal</h5>
                                 </div>
                                 <div class="card-body">
                                     <div class="d-flex flex-wrap" style="gap: 10px 10px">
-                                        <div class="icon text-white" style="width: 16.5%;">
-                                            <h5 style="margin-top:15px">1</h5>
-                                        </div>
-                                        <div class="icon text-white" style="width: 16.5%">
-                                            <h5 style="margin-top:15px">2</h5>
-                                        </div>
-                                        <div class="icon text-white" style="width: 16.5%">
-                                            <h5 style="margin-top:15px">3</h5>
-                                        </div>
-                                        <div class="icon text-white" style="width: 16.5%">
-                                            <h5 style="margin-top:15px">4</h5>
-                                        </div>
-                                        <div class="icon text-white" style="width: 16.5%">
-                                            <h5 style="margin-top:15px">5</h5>
-                                        </div>
-                                        <div class="icon text-white" style="width: 16.5%">
-                                            <h5 style="margin-top:15px">6</h5>
-                                        </div>
-                                        <div class="icon text-white" style="width: 16.5%">
-                                            <h5 style="margin-top:15px">7</h5>
-                                        </div>
-                                        <div class="icon text-white" style="width: 16.5%">
-                                            <h5 style="margin-top:15px">8</h5>
-                                        </div>
-                                        <div class="icon text-white" style="width: 16.5%">
-                                            <h5 style="margin-top:15px">9</h5>
-                                        </div>
-                                        <div class="icon text-white" style="width: 16.5%">
-                                            <h5 style="margin-top:15px">10</h5>
-                                        </div>
-                                        <div class="icon text-white" style="width: 16.5%">
-                                            <h5 style="margin-top:15px">11</h5>
-                                        </div>
-                                        <div class="icon text-white" style="width: 16.5%">
-                                            <h5 style="margin-top:15px">12</h5>
-                                        </div>
-                                        <div class="icon text-white" style="width: 16.5%">
-                                            <h5 style="margin-top:15px">13</h5>
-                                        </div>
-                                        <div class="icon text-white" style="width: 16.5%">
-                                            <h5 style="margin-top:15px">14</h5>
-                                        </div>
-                                        <div class="icon text-white" style="width: 16.5%">
-                                            <h5 style="margin-top:15px">15</h5>
-                                        </div>
-                                        <div class="icon text-white" style="width: 16.5%">
-                                            <h5 style="margin-top:15px">16</h5>
-                                        </div>
-                                        <div class="icon text-white" style="width: 16.5%">
-                                            <h5 style="margin-top:15px">17</h5>
-                                        </div>
-                                        <div class="icon text-white" style="width: 16.5%">
-                                            <h5 style="margin-top:15px">18</h5>
-                                        </div>
-                                        <div class="icon text-white" style="width: 16.5%">
-                                            <h5 style="margin-top:15px">19</h5>
-                                        </div>
-                                        <div class="icon text-white" style="width: 16.5%">
-                                            <h5 style="margin-top:15px">20</h5>
-                                        </div>
-                                        <div class="icon text-white" style="width: 16.5%">
-                                            <h5 style="margin-top:15px">21</h5>
-                                        </div>
-                                        <div class="icon text-white" style="width: 16.5%">
-                                            <h5 style="margin-top:15px">22</h5>
-                                        </div>
-                                        <div class="icon text-white" style="width: 16.5%">
-                                            <h5 style="margin-top:15px">23</h5>
-                                        </div>
-                                        <div class="icon text-white" style="width: 16.5%">
-                                            <h5 style="margin-top:15px">24</h5>
-                                        </div>
-                                        <div class="icon text-white" style="width: 16.5%">
-                                            <h5 style="margin-top:15px">25</h5>
-                                        </div>
-                                        
+                                        <template v-for="num in number">
+                                            <div class="icon text-white" style="width: 16.7%;">
+                                                <h5 style="margin-top:15px">{{num.number_soal}}</h5>
+                                            </div>
+                                        </template>
                                     </div>
                                 </div>
                             </div>
@@ -644,6 +623,28 @@
             </div>
         </div>
         
+    </div>
+
+    <div class="modal fade" id="importSoal">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Import dan Referensi Soal</h5>
+                    <button type="button" class="btn-sm btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- <div class="button-wrapper">
+                        <span class="label">
+                            Upload File
+                        </span>
+                    
+                        <input type="file" name="upload" id="upload" class="upload-box" placeholder="Upload File">
+                    
+                    </div> -->
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
     </div>
 
 </template>
@@ -677,6 +678,47 @@
                     {
                         option_name: 'E',
                     }
+                ],
+                number: [
+                    {
+                        number_soal: 1
+                    },
+                    {
+                        number_soal: 2
+                    },
+                    {
+                        number_soal: 3
+                    },
+                    {
+                        number_soal: 4
+                    },
+                    {
+                        number_soal: 5
+                    },
+                    {
+                        number_soal: 6
+                    },
+                    {
+                        number_soal: 7
+                    },
+                    {
+                        number_soal: 8
+                    },
+                    {
+                        number_soal: 9
+                    },
+                    {
+                        number_soal: 10
+                    },
+                    {
+                        number_soal: 11
+                    },
+                    {
+                        number_soal: 12
+                    },
+                    {
+                        number_soal: 13
+                    },
                 ]
             };
         },

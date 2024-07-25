@@ -80,7 +80,7 @@ select {
     outline: none;
 }
 
-/* input[type=file]::file-selector-button {
+input[type=file]::file-selector-button {
     margin-right: 20px;
     border: none;
     background: orange;
@@ -90,14 +90,14 @@ select {
     font-weight: bold;
     cursor: pointer;
     transition: background .2s ease-in-out;
-    display: none;
+    /* display: none; */
 }
 
 input[type=file]::file-selector-button:hover {
     background: #067c7e;
     color: white;
     transition: background .2s ease-in-out;
-} */
+}
 
 .button-wrapper {
     position: relative;

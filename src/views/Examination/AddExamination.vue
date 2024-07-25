@@ -384,134 +384,19 @@
                                             <!-- SOAL MENJODOHKAN -->
                                                 <template v-if="chooseVersion == 4">
                                                 
-                                                    <div class="d-flex" style="gap: 15px">
-                                                        <div class="card border-0" style="width: 50%">
-                                                            <div class="card-header">
-                                                                <div class="d-flex justify-content-between">
-                                                                    <label style="font-weight: bold; margin-top: 6px; margin-bottom: -10px">Daftar Pertanyaan</label>
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" style="color: #00387F; margin-top: 8px" width="18" height="18" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
-                                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-                                                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
-                                                                    </svg>
+                                                    <div class="d-flex" style="gap: 30px">
+                                                        <div style="width: 50%">
+                                                            <div class="d-flex justify-content-between" style="gap: 20px;">
+                                                                <div class="d-flex" style="gap: 10px; padding: 6px 0px 0px 0px">
+                                                                    <div style="background-image: linear-gradient(to bottom, #489DEC 0%, #00387F 100%); width: 20px; height: 20px; border-radius: 50%; "></div>
+                                                                    <h5 style="margin-top: 2px" class="font-weight-bold">Daftar Pernyataan</h5>
                                                                 </div>
-                                                            </div>
-                                                            <div class="card-body">
-                                                                <div class="card ">
-                                                                    <div class="card-header">
-                                                                        <div class="d-flex justify-content-between">
-                                                                            <label style=" margin-top: 5px; margin-bottom: -10px">Pertanyaan Ke - 1</label>
-                                                                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" style="color: red; margin-top: 8px" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
-                                                                                <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
-                                                                            </svg>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="card-body">
-                                                                        <textarea rows="3" placeholder="Masukan Pertanyaan"></textarea>
-                                                                        <div class="d-flex justify-content-between align-items-center">
-                                                                            <label>Kunci Jawaban</label>
-                                                                            <select style="width: 20%; text-align: center">
-                                                                                <option value="0">A</option>
-                                                                                <option value="1">B</option>
-                                                                                <option value="2">C</option>
-                                                                            </select>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card border-0" style="width: 50%">
-                                                            <div class="card-header">
-                                                                <div class="d-flex justify-content-between">
-                                                                    <label style="font-weight: bold; margin-top: 6px; margin-bottom: -10px">Daftar Jawaban</label>
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" style="color: #00387F; margin-top: 8px" width="18" height="18" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
-                                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-                                                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
-                                                                    </svg>
-                                                                </div>
-                                                            </div>
-                                                            <div class="card-body">
-
-                                                                <div class="card mb-2">
-                                                                    <div class="card-header">
-                                                                        <div class="d-flex justify-content-between">
-                                                                            <label style=" margin-top: 5px; margin-bottom: -10px">Jawaban Ke - A</label>
-                                                                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" style="color: red; margin-top: 8px" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
-                                                                                <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
-                                                                            </svg>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="card-body">
-                                                                        <input rows="2" placeholder="Masukan Jawaban">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="card">
-                                                                    <div class="card-header">
-                                                                        <div class="d-flex justify-content-between">
-                                                                            <label style=" margin-top: 5px; margin-bottom: -10px">Jawaban Ke - B</label>
-                                                                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" style="color: red; margin-top: 8px" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
-                                                                                <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
-                                                                            </svg>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="card-body">
-                                                                        <input rows="2" placeholder="Masukan Jawaban">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </template>
-                                            <!-- SOAL MENJODOHKAN -->
-
-                                            <!-- SOAL ISIAN SINGKAT -->
-                                                <template v-if="chooseVersion == 5">
-                                                
-                                                    <div class="card border-0">
-                                                        <div class="card-header">
-                                                            <div class="d-flex justify-content-between">
-                                                                <label style="font-weight: bold; margin-top: 6px; margin-bottom: -10px">Daftar Peluang Jawaban</label>
                                                                 <svg xmlns="http://www.w3.org/2000/svg" style="color: #00387F; margin-top: 8px" width="18" height="18" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
                                                                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
                                                                     <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
                                                                 </svg>
                                                             </div>
-                                                        </div>
-                                                        <div class="card-body">
-                                                            <div class="card ">
-                                                                <div class="card-header">
-                                                                    <div class="d-flex justify-content-between">
-                                                                        <label style=" margin-top: 5px; margin-bottom: -10px">Jawaban Ke - 1</label>
-                                                                        <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" style="color: red; margin-top: 8px" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
-                                                                            <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
-                                                                        </svg>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="card-body">
-                                                                    <input placeholder="Masukan Jawaban">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </template>
-                                            <!-- SOAL ISIAN SINGKAT -->
-
-                                            <!-- SOAL TRUE FALSE -->
-                                                <template v-if="chooseVersion == 6">
-                                                
-                                                    <div class="card border-0">
-                                                        <div class="card-header">
-                                                            <div class="d-flex justify-content-between">
-                                                                <label style="font-weight: bold; margin-top: 6px; margin-bottom: -10px">Daftar Pertanyaan</label>
-                                                                <svg xmlns="http://www.w3.org/2000/svg" style="color: #00387F; margin-top: 8px" width="18" height="18" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
-                                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-                                                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
-                                                                </svg>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-body">
-                                                            <div class="card ">
+                                                            <div class="card">
                                                                 <div class="card-header">
                                                                     <div class="d-flex justify-content-between">
                                                                         <label style=" margin-top: 5px; margin-bottom: -10px">Pertanyaan Ke - 1</label>
@@ -522,18 +407,130 @@
                                                                 </div>
                                                                 <div class="card-body">
                                                                     <textarea rows="3" placeholder="Masukan Pertanyaan"></textarea>
-                                                                    <div class="d-flex" style="gap:120px">
-                                                                        <label>Pilihan Jawaban</label>
-                                                                        <div>
-                                                                            <div>
-                                                                                <input type="radio">
-                                                                                <label style="margin-left: 10px">True</label>
-                                                                            </div>
-                                                                            <div>
-                                                                                <input type="radio">
-                                                                                <label style="margin-left: 10px">False</label>
-                                                                            </div>
-                                                                        </div>
+                                                                    <div class="d-flex justify-content-between align-items-center">
+                                                                        <label>Kunci Jawaban</label>
+                                                                        <select style="width: 20%; text-align: center">
+                                                                            <option value="0">A</option>
+                                                                            <option value="1">B</option>
+                                                                            <option value="2">C</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div style="width: 50%;">
+
+                                                            <div class="d-flex justify-content-between" style="gap: 20px;">
+                                                                <div class="d-flex" style="gap: 10px; padding: 6px 0px 0px 0px">
+                                                                    <div style="background-image: linear-gradient(to bottom, #489DEC 0%, #00387F 100%); width: 20px; height: 20px; border-radius: 50%; "></div>
+                                                                    <h5 style="margin-top: 2px" class="font-weight-bold">Daftar Opsi Jawaban</h5>
+                                                                </div>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" style="color: #00387F; margin-top: 8px" width="18" height="18" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="card mb-2">
+                                                                <div class="card-header">
+                                                                    <div class="d-flex justify-content-between">
+                                                                        <label style=" margin-top: 5px; margin-bottom: -10px">Jawaban Ke - A</label>
+                                                                        <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" style="color: red; margin-top: 8px" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                                                            <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
+                                                                        </svg>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <input rows="2" placeholder="Masukan Jawaban">
+                                                                </div>
+                                                            </div>
+                                                            <div class="card">
+                                                                <div class="card-header">
+                                                                    <div class="d-flex justify-content-between">
+                                                                        <label style=" margin-top: 5px; margin-bottom: -10px">Jawaban Ke - B</label>
+                                                                        <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" style="color: red; margin-top: 8px" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                                                            <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
+                                                                        </svg>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <input rows="2" placeholder="Masukan Jawaban">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </template>
+                                            <!-- SOAL MENJODOHKAN -->
+
+                                            <!-- SOAL ISIAN SINGKAT -->
+                                                <template v-if="chooseVersion == 5">
+                                                    <div class="d-flex" style="gap: 10px; padding: 6px 0px 0px 0px">
+                                                        <div style="background-image: linear-gradient(to bottom, #489DEC 0%, #00387F 100%); width: 20px; height: 20px; border-radius: 50%; "></div>
+                                                        <h5 style="margin-top: 2px" class="font-weight-bold">Pertanyaan</h5>
+                                                    </div>
+
+                                                    <textarea rows="4" placeholder="Masukan Soal"></textarea>
+                                                    <div class="d-flex justify-content-between" style="gap: 20px;">
+                                                        <div class="d-flex" style="gap: 10px; padding: 6px 0px 0px 0px">
+                                                            <div style="background-image: linear-gradient(to bottom, #489DEC 0%, #00387F 100%); width: 20px; height: 20px; border-radius: 50%; "></div>
+                                                            <h5 style="margin-top: 2px" class="font-weight-bold">Daftar Peluang Jawaban</h5>
+                                                        </div>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" style="color: #00387F; margin-top: 8px" width="18" height="18" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="card ">
+                                                        <div class="card-header">
+                                                            <div class="d-flex justify-content-between">
+                                                                <label style=" margin-top: 5px; margin-bottom: -10px">Jawaban Ke - 1</label>
+                                                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" style="color: red; margin-top: 8px" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                                                    <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <input placeholder="Masukan Jawaban">
+                                                        </div>
+                                                    </div>
+
+                                                </template>
+                                            <!-- SOAL ISIAN SINGKAT -->
+
+                                            <!-- SOAL TRUE FALSE -->
+                                                <template v-if="chooseVersion == 6">
+                                                
+                                                    <div class="d-flex justify-content-between" style="gap: 20px;">
+                                                        <div class="d-flex" style="gap: 10px; padding: 6px 0px 0px 0px">
+                                                            <div style="background-image: linear-gradient(to bottom, #489DEC 0%, #00387F 100%); width: 20px; height: 20px; border-radius: 50%; "></div>
+                                                            <h5 style="margin-top: 2px" class="font-weight-bold">Daftar Pertanyaan</h5>
+                                                        </div>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" style="color: #00387F; margin-top: 8px" width="18" height="18" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="card ">
+                                                        <div class="card-header">
+                                                            <div class="d-flex justify-content-between">
+                                                                <label style=" margin-top: 5px; margin-bottom: -10px">Pertanyaan Ke - 1</label>
+                                                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" style="color: red; margin-top: 8px" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                                                    <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <textarea rows="3" placeholder="Masukan Pertanyaan"></textarea>
+                                                            <div class="d-flex" style="gap:120px">
+                                                                <label>Pilihan Jawaban</label>
+                                                                <div>
+                                                                    <div>
+                                                                        <input type="radio">
+                                                                        <label style="margin-left: 10px">True</label>
+                                                                    </div>
+                                                                    <div>
+                                                                        <input type="radio">
+                                                                        <label style="margin-left: 10px">False</label>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -601,13 +598,14 @@
                                     <h5 style=" margin-top: 5px; margin-bottom: -3px">Daftar Nomor Soal</h5>
                                 </div>
                                 <div class="card-body">
-                                    <div class="d-flex flex-wrap" style="gap: 10px 10px">
-                                        <template v-for="num in number">
-                                            <div class="icon text-white" style="width: 16.7%;">
-                                                <h5 style="margin-top:15px">{{num.number_soal}}</h5>
-                                            </div>
-                                        </template>
-                                    </div>
+
+                                        <div class="d-flex flex-wrap" style="gap: 10px 10px">
+                                            <template v-for="num in number">
+                                                <div class="icon text-white" style="width: 16.7%;">
+                                                    <h5 style="margin-top:15px">{{num.number_soal}}</h5>
+                                                </div>
+                                            </template>
+                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -647,7 +645,7 @@
 </template>
 
 <script>
-    import { ref } from 'vue';
+
     import Title from '../../components/TitlePage.vue';
 
     export default {

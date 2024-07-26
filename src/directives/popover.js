@@ -10,6 +10,7 @@ export default {
         popover.style.border = '1px solid black';
         popover.style.padding = '5px';
         popover.style.display = 'none';
+        popover.style.zIndex = '10000'
 
         // Menambahkan elemen popover ke elemen induk
         document.body.appendChild(popover);

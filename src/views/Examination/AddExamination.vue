@@ -628,16 +628,409 @@
                     <button type="button" class="btn-sm btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <!-- <div class="button-wrapper">
-                        <span class="label">
-                            Upload File
-                        </span>
-                    
-                        <input type="file" name="upload" id="upload" class="upload-box" placeholder="Upload File">
-                    
-                    </div> -->
+                    <div class="card shadow border-0">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="title pt-2">
+                                    <h5 style="margin-bottom: -2px">Referensi Soal</h5>
+                                    <p>Terdapat beberapa referensi soal yang bisa digunakan, baik dari sekolah maupun dari BLS</p>
+                                </div>
+                                <div class="d-flex" style="gap: 10px" data-bs-toggle="modal" data-bs-target="#modalReferensiSekolah">
+                                    <div class="icon-excel" v-popover="'Referensi Soal Sekolah'">
+                                        <svg xmlns="http://www.w3.org/2000/svg" style="color: white" width="18" height="18" fill="currentColor" class="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16">
+                                            <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708"/>
+                                        </svg>
+                                    </div>
+                                    <div class="icon-pdf" v-popover="'Referensi Soal BLS'">
+                                        <svg xmlns="http://www.w3.org/2000/svg" style="color: white" width="18" height="18" fill="currentColor" class="bi bi-cloud-download-fill" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8 0a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 4.095 0 5.555 0 7.318 0 9.366 1.708 11 3.781 11H7.5V5.5a.5.5 0 0 1 1 0V11h4.188C14.502 11 16 9.57 16 7.773c0-1.636-1.242-2.969-2.834-3.194C12.923 1.999 10.69 0 8 0m-.354 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V11h-1v3.293l-2.146-2.147a.5.5 0 0 0-.708.708z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow border-0 mt-3">
+                        <div class="card-body">
+                            <div class="title pt-2">
+                                <h5 style="margin-bottom: -2px">Import Soal Ujian</h5>
+                                <p>Digunakan untuk mengimport soal dari file Microsoft Word dan Microsoft Excel</p>
+                            </div>
+
+                            <div class="d-flex mt-3" style="gap: 20px">
+                                <div style="width: 50%">
+                                    <div class="d-flex justify-content-between" style="gap: 10px">
+                                        <div class="format" style="width: 84%">
+                                            <label style="font-weight: bold">Pilih Jenis File Import</label>
+                                            <select>
+                                                <option value="0">Pilih Jenis File</option>
+                                                <option value="1">Microsoft Word Versi 1</option>
+                                                <option value="2">Microsoft Word Versi 2</option>
+                                                <option value="3">Microsoft Word Versi 3</option>
+                                                <option value="4">Microsoft Excel Versi 1</option>
+                                                <option value="5">Microsoft Excel Versi 2</option>
+                                            </select>
+                                        </div>
+                                        <div style="margin-top: 28px">
+                                            <div class="icon-pdf" v-popover="'Import Soal Dibawah'">
+                                                <svg xmlns="http://www.w3.org/2000/svg" style="color: white" width="20" height="20" fill="currentColor" class="bi bi-building-gear" viewBox="0 0 16 16">
+                                                    <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6.5a.5.5 0 0 1-1 0V1H3v14h3v-2.5a.5.5 0 0 1 .5-.5H8v4H3a1 1 0 0 1-1-1z"/>
+                                                    <path d="M4.5 2a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-6 3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-6 3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm4.386 1.46c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382zM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div for="images" class="drop-container" id="dropcontainer">
+                                        <label class="drop-title">Drop files here</label>
+                                        or
+                                        <input type="file" id="images" accept="image/*" required>
+                                    </div>
+                                </div>
+                                <div style="width: 50%">
+                                    <div class="title">
+                                        <div class="d-flex mb-0" style="gap: 20px">
+                                            <label style="font-weight: bold">Unduh Format Soal ujian</label>
+                                            <svg v-popover="'Informasi, Sebelum mengimpor File, pastikan berkas excel atau word Anda sudah sesuai formatnya agar data dapat diproses oleh sistem.'" xmlns="http://www.w3.org/2000/svg" style="color: #00387F; cursor: pointer; margin-bottom: 3px" width="18" height="18" fill="currentColor" class="bi bi-question-circle-fill" viewBox="0 0 16 16">
+                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
+                                            </svg>
+                                        </div>
+
+                                        <!-- WORD -->
+                                            <div class="d-flex justify-content-between align-items-center mb-1" data-bs-toggle="collapse" data-bs-target="#word" aria-expanded="false" aria-control="word">
+                                                <div class="d-flex align-items-center" style="gap: 10px">
+                                                    <div class="icon-tambah">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" style="color:white" width="20" height="20" fill="currentColor" class="bi bi-file-earmark-word-fill" viewBox="0 0 16 16">
+                                                            <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M5.485 6.879l1.036 4.144.997-3.655a.5.5 0 0 1 .964 0l.997 3.655 1.036-4.144a.5.5 0 0 1 .97.242l-1.5 6a.5.5 0 0 1-.967.01L8 9.402l-1.018 3.73a.5.5 0 0 1-.967-.01l-1.5-6a.5.5 0 1 1 .97-.242z"/>
+                                                        </svg>
+                                                    </div>
+                                                    <label style="margin-top:5px"><b>Microsoft Word</b></label>
+                                                </div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                                                </svg>
+                                            </div>
+                                            <div style="border: 1px solid black"></div>
+
+                                            <div class="collapse mt-1" id="word">
+                                                <div class="d-flex justify-content-between align-items-center mb-1" data-bs-toggle="collapse" data-bs-target="#word" aria-expanded="false" aria-control="word">
+                                                    <div class="d-flex align-items-center" style="gap: 10px">
+                                                        <div class="icon-tambah">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" style="color:white" width="20" height="20" fill="currentColor" class="bi bi-file-earmark-word-fill" viewBox="0 0 16 16">
+                                                                <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M5.485 6.879l1.036 4.144.997-3.655a.5.5 0 0 1 .964 0l.997 3.655 1.036-4.144a.5.5 0 0 1 .97.242l-1.5 6a.5.5 0 0 1-.967.01L8 9.402l-1.018 3.73a.5.5 0 0 1-.967-.01l-1.5-6a.5.5 0 1 1 .97-.242z"/>
+                                                            </svg>
+                                                        </div>
+                                                        <label style="margin-top:5px">Microsoft Word Versi 1</label>
+                                                    </div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" style="color:#00387F" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                                                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center mb-1" data-bs-toggle="collapse" data-bs-target="#word" aria-expanded="false" aria-control="word">
+                                                    <div class="d-flex align-items-center" style="gap: 10px">
+                                                        <div class="icon-tambah">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" style="color:white" width="20" height="20" fill="currentColor" class="bi bi-file-earmark-word-fill" viewBox="0 0 16 16">
+                                                                <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M5.485 6.879l1.036 4.144.997-3.655a.5.5 0 0 1 .964 0l.997 3.655 1.036-4.144a.5.5 0 0 1 .97.242l-1.5 6a.5.5 0 0 1-.967.01L8 9.402l-1.018 3.73a.5.5 0 0 1-.967-.01l-1.5-6a.5.5 0 1 1 .97-.242z"/>
+                                                            </svg>
+                                                        </div>
+                                                        <label style="margin-top:5px">Microsoft Word Versi 2</label>
+                                                    </div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" style="color:#00387F" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                                                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center mb-1" data-bs-toggle="collapse" data-bs-target="#word" aria-expanded="false" aria-control="word">
+                                                    <div class="d-flex align-items-center" style="gap: 10px">
+                                                        <div class="icon-tambah">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" style="color:white" width="20" height="20" fill="currentColor" class="bi bi-file-earmark-word-fill" viewBox="0 0 16 16">
+                                                                <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M5.485 6.879l1.036 4.144.997-3.655a.5.5 0 0 1 .964 0l.997 3.655 1.036-4.144a.5.5 0 0 1 .97.242l-1.5 6a.5.5 0 0 1-.967.01L8 9.402l-1.018 3.73a.5.5 0 0 1-.967-.01l-1.5-6a.5.5 0 1 1 .97-.242z"/>
+                                                            </svg>
+                                                        </div>
+                                                        <label style="margin-top:5px">Microsoft Word Versi 3</label>
+                                                    </div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" style="color:#00387F" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                                                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        <!-- WORD -->
+
+                                        <!-- EXCEL -->
+                                            <div class="d-flex justify-content-between align-items-center mt-3 mb-1" data-bs-toggle="collapse" data-bs-target="#excel" aria-expanded="false" aria-control="excel">
+                                                <div class="d-flex align-items-center" style="gap: 10px">
+                                                    <div class="icon-excel">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" style="color: white" width="20" height="20" fill="currentColor" class="bi bi-file-earmark-spreadsheet-fill" viewBox="0 0 16 16">
+                                                            <path d="M6 12v-2h3v2z"/>
+                                                            <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M3 9h10v1h-3v2h3v1h-3v2H9v-2H6v2H5v-2H3v-1h2v-2H3z"/>
+                                                        </svg>
+                                                    </div>
+                                                    <label style="margin-top:5px"><b>Microsoft Excel</b></label>
+                                                </div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                                                </svg>
+                                            </div>
+                                            <div style="border: 1px solid black"></div>
+
+                                            <div class="collapse mt-1" id="excel">
+                                                <div class="d-flex justify-content-between align-items-center mb-1" data-bs-toggle="collapse" data-bs-target="#word" aria-expanded="false" aria-control="word">
+                                                    <div class="d-flex align-items-center" style="gap: 10px">
+                                                        <div class="icon-excel">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" style="color: white" width="20" height="20" fill="currentColor" class="bi bi-file-earmark-spreadsheet-fill" viewBox="0 0 16 16">
+                                                                <path d="M6 12v-2h3v2z"/>
+                                                                <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M3 9h10v1h-3v2h3v1h-3v2H9v-2H6v2H5v-2H3v-1h2v-2H3z"/>
+                                                            </svg>
+                                                        </div>
+                                                        <label style="margin-top:5px">Microsoft Excel Versi 1</label>
+                                                    </div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" style="color:#00387F" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                                                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center mb-1" data-bs-toggle="collapse" data-bs-target="#word" aria-expanded="false" aria-control="word">
+                                                    <div class="d-flex align-items-center" style="gap: 10px">
+                                                        <div class="icon-excel">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" style="color: white" width="20" height="20" fill="currentColor" class="bi bi-file-earmark-spreadsheet-fill" viewBox="0 0 16 16">
+                                                                <path d="M6 12v-2h3v2z"/>
+                                                                <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M3 9h10v1h-3v2h3v1h-3v2H9v-2H6v2H5v-2H3v-1h2v-2H3z"/>
+                                                            </svg>
+                                                        </div>
+                                                        <label style="margin-top:5px">Microsoft Excel Versi 2</label>
+                                                    </div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" style="color:#00387F" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                                                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        <!-- EXCEL -->
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalReferensiSekolah">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Referensi Soal Sekolah dan BLS</h5>
+                    <button type="button" class="btn-sm btn-close" data-bs-toggle="modal" data-bs-target="#importSoal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex" style="gap: 20px">
+                        <div class="card shadow border-0" style="width: 35%">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    
+                                    <div class="card" style="width: 100%">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between align-items-center" style="margin-top: 4px; margin-bottom: -7px" data-bs-toggle="collapse" data-bs-target="#settings">
+                                                <h5>Settings</h5>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                                                </svg>
+                                            </div>
+
+                                            <div class="collapse mt-3" id="settings">
+                                                <div class="d-flex" style="gap: 10px">
+                                                    <div class="format">
+                                                        <label>Tipe Ujian</label>
+                                                        <select>
+                                                            <option value="0">Pilih Tipe Ujian</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="format">
+                                                        <label>Jenjang Sekolah</label>
+                                                        <select>
+                                                            <option value="0">Pilih Jenjang</option>
+                                                        </select>
+                                                    </div>
+                                                </div> 
+                                                <div class="d-flex" style="gap: 10px">
+                                                    <div class="format">
+                                                        <label>Tingkat Kelas</label>
+                                                        <select>
+                                                            <option value="0">Pilih Tingkat Kelas</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="format">
+                                                        <label>Mata Pelajaran</label>
+                                                        <select>
+                                                            <option value="0">Pilih Mata Pelajaran</option>
+                                                        </select>
+                                                    </div>
+                                                </div> 
+                                                <div class="d-flex" style="gap: 10px">
+                                                    <div class="format">
+                                                        <label>Kurikulum</label>
+                                                        <select>
+                                                            <option value="0">Pilih Kurikulum</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="format">
+                                                        <label>Tanggal</label>
+                                                        <input type="date">
+                                                    </div>
+                                                </div> 
+                                                <button class="button-simpan w-100 mt-2">Cari</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                    
+                                    <div class="card" style="width: 100%">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between align-items-center" style="margin-top: 4px; margin-bottom: -7px" data-bs-toggle="collapse" data-bs-target="#daftarSoal">
+                                                <h5>Daftar Soal</h5>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                                                </svg>
+                                            </div>
+
+                                            <div class="collapse mt-3" id="daftarSoal">
+                                                
+                                                <div class="d-flex justify-content-between align-items-center mb-1" style="gap: 5px">
+                                                    <label style="width: 5%; text-align: center">1.</label>
+                                                    <label>Ujian Matematika</label>
+                                                    <div class="icon-tambah">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" style="color: white;" width="19" height="19" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                                                            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center mb-1" style="gap: 5px">
+                                                    <label style="width: 5%; text-align: center">2.</label>
+                                                    <label>Ujian Bahasa Indonesia</label>
+                                                    <div class="icon-tambah">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" style="color: white;" width="19" height="19" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                                                            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center mb-1" style="gap: 5px">
+                                                    <input type="checkbox" style="width: 5%;">
+                                                    <label>Ujian IPA</label>
+                                                    <div class="icon-tambah">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" style="color: white;" width="19" height="19" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                                                            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center" style="gap: 5px">
+                                                    <input type="checkbox" style="width: 5%;">
+                                                    <label>Ujian Olahraga</label>
+                                                    <div class="icon-tambah">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" style="color: white;" width="19" height="19" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                                                            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+
+                                                <button class="button-simpan w-100 mt-2">Generate Soal Dari Beberapa Ujian</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow border-0" style="width: 65%">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-center" style="gap: 15px">
+                                    <button class="button-tambah1">Lihat Soal Yang Dipilih</button>
+                                    <button class="button-tambah1">Gunakan Soal Yang Dipilih</button>
+                                    <button class="button-tambah1">Gunakan Soal Yang Ditampilkan</button>
+                                </div>
+                                <hr>
+                                <div class="d-flex justify-content-between" style="gap: 20px">
+                                    <div class="d-flex justify-content-center" style="gap: 10px; width: 8%">
+                                        <input type="checkbox" style="width: 15px; height: 15px; margin-top: 7px">
+                                        <label style="font-weight: bold; margin-top: 5px">1.</label>
+                                    </div>
+                                    <div style="width: 92%">
+                                        <label style="font-weight: bold; margin-top: 5px; margin-bottom: 10px">Apa Kepanjangan PPKM?</label>
+                                        <div class="d-flex mb-2">
+                                            <label>A.</label>
+                                            <label>Pemberlakuan Pembatasan Kegiatan Masyarakat Indonesia</label>
+                                        </div>
+                                        <div class="d-flex mb-2">
+                                            <label>B.</label>
+                                            <label>Pemberlakuan Pembatasan Kegiatan Masyarakat</label>
+                                        </div>
+                                        <div class="d-flex mb-2">
+                                            <label>C.</label>
+                                            <label>Pemberlakuan Pembatasan Kegiatan Indonesia</label>
+                                        </div>
+                                        <div class="d-flex mb-2">
+                                            <label>D.</label>
+                                            <label>Pemberlakuan Pembatasan Kegiatan</label>
+                                        </div>
+                                        <div class="d-flex mb-2">
+                                            <label>E.</label>
+                                            <label>Pemberlakuan Pembatasan</label>
+                                        </div>
+                                        <div class="d-flex mb-2" style="gap: 15px">
+                                            <label style="font-weight: bold;">Kunci Jawaban :</label>
+                                            <label>A</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="d-flex justify-content-between" style="gap: 20px">
+                                    <div class="d-flex justify-content-center" style="gap: 10px; width: 8%">
+                                        <input type="checkbox" style="width: 15px; height: 15px; margin-top: 7px">
+                                        <label style="font-weight: bold; margin-top: 5px">2.</label>
+                                    </div>
+                                    <div style="width: 92%">
+                                        <label style="font-weight: bold; margin-top: 5px; margin-bottom: 10px">Dengan berolahraga seperti bersepeda, lari pagi, dan senam bersama teman - teman membuat tubuh kita ........?</label>
+                                        <div class="d-flex mb-2">
+                                            <label>A.</label>
+                                            <label>terkena penyakit</label>
+                                        </div>
+                                        <div class="d-flex mb-2">
+                                            <label>B.</label>
+                                            <label>menjadi sehat</label>
+                                        </div>
+                                        <div class="d-flex mb-2">
+                                            <label>C.</label>
+                                            <label>tidak ada perbedaan</label>
+                                        </div>
+                                        <div class="d-flex mb-2">
+                                            <label>D.</label>
+                                            <label>Menjadi Bugar</label>
+                                        </div>
+                                        <div class="d-flex mb-2">
+                                            <label>E.</label>
+                                            <label>Pemberlakuan Pada Tubuh</label>
+                                        </div>
+                                        <div class="d-flex mb-2" style="gap: 15px">
+                                            <label style="font-weight: bold;">Kunci Jawaban :</label>
+                                            <label>C</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="button-tutup" data-bs-toggle="modal" data-bs-target="#importSoal">Tutup</button>
+                </div>
             </div>
         </div>
     </div>
@@ -716,6 +1109,29 @@
                     },
                 ]
             };
+        },
+        mounted() {
+            const dropContainer = document.getElementById("dropcontainer")
+            const fileInput = document.getElementById("images")
+
+            dropContainer.addEventListener("dragover", (e) => {
+                // prevent default to allow drop
+                e.preventDefault()
+            }, false)
+
+            dropContainer.addEventListener("dragenter", () => {
+                dropContainer.classList.add("drag-active")
+            })
+
+            dropContainer.addEventListener("dragleave", () => {
+                dropContainer.classList.remove("drag-active")
+            })
+
+            dropContainer.addEventListener("drop", (e) => {
+                e.preventDefault()
+                dropContainer.classList.remove("drag-active")
+                fileInput.files = e.dataTransfer.files
+            })
         },
         methods: {
             chooseJenisPertanyaan() {

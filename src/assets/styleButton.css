@@ -42,6 +42,20 @@ button.button-tambah {
     transition: all 0.4s ease;
 }
 
+button.button-tambah1 {
+    border-radius: 8px;
+    border: 0px solid transparent;
+    padding: 9px 10px 4px 10px;
+    font-size: 13pt;
+    height: 40px;
+    /* font-weight: bold; */
+    color: white;
+    /* background-image: linear-gradient(to bottom, #EE427D 0%, #A8144A 100%); */
+    background-image: linear-gradient(to bottom, #489DEC 0%, #00387F 100%);
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
 button.button-simpan {
     border-radius: 8px;
     border: 0px solid transparent;

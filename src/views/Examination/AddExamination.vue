@@ -1,6 +1,6 @@
 <template>
     
-    <div class="card border-0">
+    <div class="card border-0" data-aos="fade-up">
         <div class="card-body">
             <div class="padding-content">
                 <Title :title="title" :subTitle="subTitle" />
@@ -8,7 +8,7 @@
         </div>
     </div>
 
-    <div class="card border-0 mt-2">
+    <div class="card border-0 mt-2" data-aos="fade-up">
         <div class="card-header">
             <div class="padding-content">
                 <nav style="margin-bottom: -10px">
@@ -598,8 +598,7 @@
                                     <h5 style=" margin-top: 5px; margin-bottom: -3px">Daftar Nomor Soal</h5>
                                 </div>
                                 <div class="card-body">
-
-                                        <div class="d-flex flex-wrap" style="gap: 10px 10px">
+                                        <div class="d-flex justify-content-center flex-wrap" style="gap: 10px 10px">
                                             <template v-for="num in number">
                                                 <div class="icon text-white" style="width: 16.7%;">
                                                     <h5 style="margin-top:15px">{{num.number_soal}}</h5>

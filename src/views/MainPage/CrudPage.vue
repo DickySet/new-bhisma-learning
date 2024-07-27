@@ -1,6 +1,6 @@
 <template>
 
-    <div class="card border-0">
+    <div class="card border-0" data-aos="fade-up">
         <div class="card-body">
             <div class="padding-content">
                 <Title :title="title" :subTitle="subTitle" />
@@ -34,7 +34,7 @@
             </div>
         </div>
     </div>
-    <div class="card border-0 mt-3">
+    <div class="card border-0 mt-3" data-aos="fade-up">
         <div class="card-body">
             <div class="padding-content">
                 <TableComponent 

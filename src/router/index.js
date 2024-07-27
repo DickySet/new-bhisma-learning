@@ -8,6 +8,7 @@ import DashboardView from '../views/Dashboard/DashboardPage.vue'
 import CrudPage from '../views/MainPage/CrudPage.vue'
 import Examination from '../views/Examination/Examination.vue'
 import AddExamination from '../views/Examination/AddExamination.vue'
+import ViewExamination from '../views/Examination/ViewExamination.vue'
 import NotFoundView from '../views/NotFound/NotFoundPage.vue'
 
 const router = createRouter({
@@ -57,6 +58,16 @@ const router = createRouter({
             name: 'Add Examination',
             path: '/add-examination',
             component: AddExamination
+        },
+        {
+            name: 'Add Examination',
+            path: '/add-examination',
+            component: AddExamination
+        },
+        {
+            name: 'View Examination',
+            path: '/view-examination',
+            component: ViewExamination
         },
 
     ]

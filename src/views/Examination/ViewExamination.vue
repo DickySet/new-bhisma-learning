@@ -1,6 +1,7 @@
 <template>
     
-    <div class="d-flex justify-content-between" style="gap: 15px">
+    <h1>Hallo</h1>
+    <!-- <div class="d-flex justify-content-between" style="gap: 15px">
 
         <div class="card border-0" style="width: 33%; border: none; border-top: 5px solid orange !important">
             <div class="card-body">
@@ -35,6 +36,6 @@
             </div>
         </div>
 
-    </div>
+    </div> -->
 
 </template>

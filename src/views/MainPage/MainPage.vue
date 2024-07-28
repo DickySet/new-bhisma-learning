@@ -60,13 +60,13 @@
                 </div>
                 <div class="kotak_2">
                     <div class="kotak_2_1">
-                        <select>
+                        <select class="opsi1">
                             <option value="0">Bhisma Interaktif</option>
                         </select>
-                        <select>
+                        <select class="opsi2">
                             <option value="0">Tahun Ajaran 2024/2025</option>
                         </select>
-                        <select>
+                        <select class="opsi3">
                             <option value="0">Kurikulum Merdeka</option>
                         </select>
                     </div>
@@ -128,182 +128,46 @@
                                         menu_path: "view-examination"
                                     },
                                 ]
-                            }
+                            },
+                            {
+                                sub_menu_name: 'Components',
+                                icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-broadcast" viewBox="0 0 16 16">
+                                            <path d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707m2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708m5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708m2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+                                        </svg>`,
+                                data_sub_children: [
+                                    {
+                                        menu_name: "Button and Icon",
+                                        menu_path: "button-and-icon",
+                                    },
+                                    {
+                                        menu_name: "Typography",
+                                        menu_path: "typography"
+                                    },
+                                    {
+                                        menu_name: "Panels",
+                                        menu_path: "panels"
+                                    },
+                                ]
+                            },
+                            {
+                                sub_menu_name: 'Forms and Tables',
+                                icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                                            <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"/>
+                                        </svg>`,
+                                data_sub_children: [
+                                    {
+                                        menu_name: "Forms",
+                                        menu_path: "Forms",
+                                    },
+                                    {
+                                        menu_name: "Tables",
+                                        menu_path: "tables"
+                                    },
+                                ]
+                            },
                         ]
 
                     },
-                    // {
-                    //     menu_name: 'Administrator',
-                    //     sub_menu:
-                    //     [
-                    //         {
-                    //             sub_menu_name: 'Persiapan Sekolah',
-                    //             icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
-                    //                         <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
-                    //                         <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
-                    //                     </svg>`,
-                    //             data_sub_children: [
-                    //                 {
-                    //                     menu_name: "Sekolah",
-                    //                     menu_path: "kelolasekolah",
-                    //                     icon: "fas fa-school"
-                    //                 },
-                    //                 {
-                    //                     menu_name: "Tahun Akademik",
-                    //                     menu_path: "academicyear",
-                    //                     icon: "fas fa-school"
-                    //                 },
-                    //                 {
-                    //                     menu_name: "Kalender Akademik",
-                    //                     menu_path: "academiccalendar",
-                    //                     icon: "fas fa-school"
-                    //                 },
-                    //                 {
-                    //                     menu_name: "Kurikulum Kelas",
-                    //                     menu_path: "curriculum/classes",
-                    //                     icon: "fas fa-school"
-                    //                 },
-                    //             ]
-                    //         },
-                    //         {
-                    //             sub_menu_name: 'Komunikasi',
-                    //             icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-broadcast" viewBox="0 0 16 16">
-                    //                         <path d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707m2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708m5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708m2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
-                    //                     </svg>`,
-                    //             data_sub_children: [
-                    //                 {
-                    //                     menu_name: "Broadcast Pesan",
-                    //                     menu_path: "broadcastmessage",
-                    //                     icon: "fas fa-school"
-                    //                 },
-                    //                 {
-                    //                     menu_name: "Meeting",
-                    //                     menu_path: "meeting",
-                    //                     icon: "fas fa-school"
-                    //                 },
-                    //             ]
-                    //         },
-                    //         {
-                    //             sub_menu_name: 'Pengaturan Website',
-                    //             icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
-                    //                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"/>
-                    //                     </svg>`,
-                    //             data_sub_children: [
-                    //                 {
-                    //                     menu_name: "Album",
-                    //                     menu_path: "post_album_index",
-                    //                     icon: "fas fa-school"
-                    //                 },
-                    //                 {
-                    //                     menu_name: "Berita",
-                    //                     menu_path: "post_news_index",
-                    //                     icon: "fas fa-school"
-                    //                 },
-                    //                 {
-                    //                     menu_name: "Galeri Video",
-                    //                     menu_path: "post_videos_index",
-                    //                     icon: "fas fa-school"
-                    //                 },
-                    //             ]
-                    //         },
-                    //     ]
-
-                    // },
-                    // {
-                    //     menu_name: 'Pembelajaran',
-                    //     sub_menu:
-                    //     [
-                    //         {
-                    //             sub_menu_name: 'Persiapan Sekolah',
-                    //             icon: ` <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-house-gear" viewBox="0 0 16 16">
-                    //                         <path d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.708L8 2.207l-5 5V13.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 2 13.5V8.207l-.646.647a.5.5 0 1 1-.708-.708z"/>
-                    //                         <path d="M11.886 9.46c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.044c-.613-.181-.613-1.049 0-1.23l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382zM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"/>
-                    //                     </svg>`,
-                    //             data_sub_children: [
-                    //                 {
-                    //                     menu_name: "Mata Pelajaran",
-                    //                     menu_path: "mapping/grade-level-subjects",
-                    //                     icon: "fas fa-school"
-                    //                 },
-                    //                 {
-                    //                     menu_name: "Tipe Mata Pelajaran",
-                    //                     menu_path: "course_type_school",
-                    //                     icon: "fas fa-school"
-                    //                 },
-                    //                 {
-                    //                     menu_name: "Kompetensi Dasar",
-                    //                     menu_path: "teacher_teaching_class_admin",
-                    //                     icon: "fas fa-school"
-                    //                 },
-                    //                 {
-                    //                     menu_name: "Penyusunan dan Nilai TP",
-                    //                     menu_path: "curriculum_class_admin",
-                    //                     icon: "fas fa-school"
-                    //                 },
-                    //             ]
-                    //         },
-                    //         {
-                    //             sub_menu_name: 'Ujian Latihan',
-                    //             icon: ` <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-vector-pen" viewBox="0 0 16 16">
-                    //                         <path fill-rule="evenodd" d="M10.646.646a.5.5 0 0 1 .708 0l4 4a.5.5 0 0 1 0 .708l-1.902 1.902-.829 3.313a1.5 1.5 0 0 1-1.024 1.073L1.254 14.746 4.358 4.4A1.5 1.5 0 0 1 5.43 3.377l3.313-.828zm-1.8 2.908-3.173.793a.5.5 0 0 0-.358.342l-2.57 8.565 8.567-2.57a.5.5 0 0 0 .34-.357l.794-3.174-3.6-3.6z"/>
-                    //                         <path fill-rule="evenodd" d="M2.832 13.228 8 9a1 1 0 1 0-1-1l-4.228 5.168-.026.086z"/>
-                    //                     </svg>`,
-                    //             data_sub_children: [
-                    //                 {
-                    //                     menu_name: "Daftar Latihan",
-                    //                     menu_path: "exercises/1",
-                    //                     icon: "fas fa-school"
-                    //                 },
-                    //                 {
-                    //                     menu_name: "Hasil Latihan",
-                    //                     menu_path: "resultexercises",
-                    //                     icon: "fas fa-school"
-                    //                 },
-                    //                 {
-                    //                     menu_name: "Kompetensi Dasar",
-                    //                     menu_path: "teacher_teaching_class_admin",
-                    //                     icon: "fas fa-school"
-                    //                 },
-                    //                 {
-                    //                     menu_name: "Penyusunan dan Nilai TP",
-                    //                     menu_path: "curriculum_class_admin",
-                    //                     icon: "fas fa-school"
-                    //                 },
-                    //             ]
-                    //         },
-                    //         {
-                    //             sub_menu_name: 'Bank Soal Ujian',
-                    //             icon: ` <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-journal-bookmark-fill" viewBox="0 0 16 16">
-                    //                         <path fill-rule="evenodd" d="M6 1h6v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8z"/>
-                    //                         <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/>
-                    //                         <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/>
-                    //                     </svg>`,
-                    //             data_sub_children: [
-                    //                 {
-                    //                     menu_name: "Daftar Latihan",
-                    //                     menu_path: "exercises/1",
-                    //                     icon: "fas fa-school"
-                    //                 },
-                    //                 {
-                    //                     menu_name: "Hasil Latihan",
-                    //                     menu_path: "resultexercises",
-                    //                     icon: "fas fa-school"
-                    //                 },
-                    //                 {
-                    //                     menu_name: "Kompetensi Dasar",
-                    //                     menu_path: "teacher_teaching_class_admin",
-                    //                     icon: "fas fa-school"
-                    //                 },
-                    //                 {
-                    //                     menu_name: "Penyusunan dan Nilai TP",
-                    //                     menu_path: "curriculum_class_admin",
-                    //                     icon: "fas fa-school"
-                    //                 },
-                    //             ]
-                    //         },
-                    //     ]
-
-                    // },
                     // {
                     //     menu_name: 'Data Sekolah',
                     //     sub_menu:
@@ -789,6 +653,10 @@
         .kotak_2_1 {
             flex-direction: column;
         }
+
+        .opsi1, .opsi3 {
+            display: none;
+        }
     }
 
     @media screen and (min-width: 360px) and (max-width: 576px) {
@@ -877,6 +745,10 @@
             overflow: auto;
         }
 
+        .opsi1, .opsi3 {
+            display: none;
+        }
+
     }
 
     @media screen and (min-width: 576px) and (max-width: 769px) {
@@ -947,6 +819,10 @@
             gap: 0px 0px;
             height: 40px;
             overflow: auto;
+        }
+
+        .opsi1, .opsi3 {
+            display: none;
         }
 
     }

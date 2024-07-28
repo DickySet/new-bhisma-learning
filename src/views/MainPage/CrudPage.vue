@@ -1,24 +1,24 @@
 <template>
 
-    <div class="card border-0" data-aos="fade-up">
+    <div class="card border-0">
         <div class="card-body">
             <div class="padding-content">
                 <Title :title="title" :subTitle="subTitle" />
 
                 <div class="filtering">
-                    <div class="form-filtering">
+                    <div class="form-filtering3">
                         <label>Tingkat</label>
                         <select>
                             <option value="0">Pilih Tingkat</option>
                         </select>
                     </div>
-                    <div class="form-filtering">
+                    <div class="form-filtering3">
                         <label>Kelas</label>
                         <select>
                             <option value="0">Pilih Kelas</option>
                         </select>
                     </div>
-                    <div class="form-filtering">
+                    <div class="form-filtering3">
                         <label>Sub Kelas</label>
                         <select>
                             <option value="0">Pilih Sub Kelas</option>
@@ -34,7 +34,7 @@
             </div>
         </div>
     </div>
-    <div class="card border-0 mt-3" data-aos="fade-up">
+    <div class="card border-0 mt-3">
         <div class="card-body">
             <div class="padding-content">
                 <TableComponent 

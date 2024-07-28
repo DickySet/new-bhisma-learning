@@ -35,6 +35,17 @@
         background-image: linear-gradient(to bottom, #489DEC 0%, #00387F 100%);
     }
 
+    @media screen and (min-width: 0px) and (max-width: 359px) {
+
+        .kotak-icon-title {
+            width: 16px;
+            height: 50px;
+            border-radius: 13px;
+            background-image: linear-gradient(to bottom, #489DEC 0%, #00387F 100%);
+        }
+
+    } 
+    
     @media screen and (min-width: 360px) and (max-width: 527px) {
 
         .kotak-icon-title {

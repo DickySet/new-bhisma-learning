@@ -1,6 +1,6 @@
 <template>
     
-    <div class="card border-0" data-aos="fade-up">
+    <div class="card border-0">
         <div class="card-body">
             <div class="padding-content">
                 <Title :title="title" :subTitle="subTitle" />
@@ -8,18 +8,18 @@
         </div>
     </div>
 
-    <div class="card border-0 mt-2" data-aos="fade-up">
+    <div class="card border-0 mt-2">
         <div class="card-header">
             <div class="padding-content">
                 <nav style="margin-bottom: -10px">
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                        <button class="nav-link active" style="font-size: 13.5pt" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text-fill" viewBox="0 0 16 16">
                                 <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1z"/>
                             </svg>
                             Konfigurasi Data Ujian
                         </button>
-                        <button class="nav-link" style="font-size: 13.5pt" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16">
                                 <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
                                 <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
@@ -215,12 +215,12 @@
                             </div>
                             <div class="d-flex" style="gap: 10px">
                                 <div class="icon" v-popover="'Hapus File Yang Diimport'">
-                                    <svg style="color: white" width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                    <svg style="color: white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
                                         <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
                                     </svg>
                                 </div>
                                 <div class="icon-pdf" v-popover="'Download Data Ujian Sementara'">
-                                    <svg  xmlns="http://www.w3.org/2000/svg" style="color: white" width="20" height="20" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16">
+                                    <svg  xmlns="http://www.w3.org/2000/svg" style="color: white" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16">
                                         <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"/>
                                     </svg>
                                 </div>
@@ -232,8 +232,8 @@
                             </div>
                         </div>
 
-                        <div class="d-flex" style="gap: 15px">
-                            <div class="card shadow border-0" style="width: 70%; height: auto">
+                        <div class="d-flex flex-wrap" style="gap: 15px">
+                            <div class="card shadow border-0" style="width: 70%; height: auto; flex-grow: 1; flex-basis: 69%;">
                                 <div class="card-header">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <h5 style=" margin-top: 5px; margin-bottom: -3px">Daftar Isi Soal</h5>
@@ -244,7 +244,7 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="d-flex" style="gap: 10px">
-                                        <div style="width: 4%; margin-left: 10px; margin-top: 8px">
+                                        <div style="width: 4%; margin-top: 8px">
                                             <h5>1.</h5>
                                         </div>
                                         <div style="width: 92%">
@@ -376,7 +376,6 @@
                                                             </div>
                                                         </div>
                                                     </template>
-                                                    
                                                     
                                                 </template>
                                             <!-- SOAL PILIHAN GANDA KOMPLEKS-->
@@ -593,7 +592,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card sticky-top shadow border-0" style="width: 30%; max-height: 330px; overflow: auto; cursor: pointer; z-index:0">
+                            <div class="card sticky-top shadow border-0" style="width: 30%; max-height: 330px; overflow: auto; cursor: pointer; z-index:0; flex-grow: 1; flex-basis: 29%; order: 1">
                                 <div class="card-header">
                                     <h5 style=" margin-top: 5px; margin-bottom: -3px">Daftar Nomor Soal</h5>
                                 </div>
@@ -656,8 +655,8 @@
                                 <p>Digunakan untuk mengimport soal dari file Microsoft Word dan Microsoft Excel</p>
                             </div>
 
-                            <div class="d-flex mt-3" style="gap: 20px">
-                                <div style="width: 50%">
+                            <div class="d-flex flex-wrap mt-3" style="gap: 20px">
+                                <div style="width: 50%; flex-grow: 1; flex-basis: 49%;">
                                     <div class="d-flex justify-content-between" style="gap: 10px">
                                         <div class="format" style="width: 84%">
                                             <label style="font-weight: bold">Pilih Jenis File Import</label>
@@ -685,7 +684,7 @@
                                         <input type="file" id="images" accept="image/*" required>
                                     </div>
                                 </div>
-                                <div style="width: 50%">
+                                <div style="width: 50%; flex-grow: 1; flex-basis: 49%;">
                                     <div class="title">
                                         <div class="d-flex mb-0" style="gap: 20px">
                                             <label style="font-weight: bold">Unduh Format Soal ujian</label>
@@ -1157,6 +1156,41 @@
     button.button-popover {
         background-color: white;
         border:none;
+    }
+
+    .drop-container {
+        position: relative;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        padding: 20px;
+        border-radius: 10px;
+        border: 2px dashed #555;
+        color: #444;
+        cursor: pointer;
+        transition: background .2s ease-in-out, border .2s ease-in-out;
+    }
+
+    .drop-container:hover,
+    .drop-container.drag-active {
+        background: #eee;
+        border-color: #111;
+    }
+
+    .drop-container:hover .drop-title,
+    .drop-container.drag-active .drop-title {
+        color: #222;
+    }
+
+    .drop-title {
+        color: #444;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        transition: color .2s ease-in-out;
     }
 
 </style>

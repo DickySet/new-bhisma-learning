@@ -1,47 +1,47 @@
 <template>
 
-    <div class="card border-0" data-aos="fade-up">
+    <div class="card border-0">
         <div class="card-body">
             <div class="padding-content">
 
                 <Title :title="title" :subTitle="subTitle" />
 
                 <div class="filtering">
-                    <div class="form-filtering">
+                    <div class="form-filtering4">
                         <label>Jenjang Sekolah</label>
                         <select>
                             <option value="0">Pilih Jenjang</option>
                         </select>
                     </div>
-                    <div class="form-filtering">
+                    <div class="form-filtering4">
                         <label>Tipe Ujian</label>
                         <select>
                             <option value="0">Pilih Jenjang</option>
                         </select>
                     </div>
-                    <div class="form-filtering">
+                    <div class="form-filtering4">
                         <label>Tingkat Kelas</label>
                         <select>
                             <option value="0">Pilih Jenjang</option>
                         </select>
                     </div>
-                    <div class="form-filtering">
+                    <div class="form-filtering4">
                         <label>Mata Pelajaran</label>
                         <select>
                             <option value="0">Pilih Jenjang</option>
                         </select>
                     </div>
-                    <div class="form-filtering">
+                    <div class="form-filtering4">
                         <label>Kurikulum</label>
                         <select>
                             <option value="0">Pilih Jenjang</option>
                         </select>
                     </div>
-                    <div class="form-filtering">
+                    <div class="form-filtering4">
                         <label>Dari Tanggal</label>
                         <input type="date">
                     </div>
-                    <div class="form-filtering">
+                    <div class="form-filtering4">
                         <label>Sampai Tanggal</label>
                         <input type="date">
                     </div>
@@ -56,7 +56,7 @@
         </div>
     </div>
 
-    <div class="card border-0 mt-3" data-aos="fade-up">
+    <div class="card border-0 mt-3">
         <div class="card-body">
             <div class="padding-content">
 

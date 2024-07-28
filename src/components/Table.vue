@@ -1,7 +1,8 @@
 <template>
 
-    <div class="d-flex justify-content-between mt-3">
-        <div class="d-flex" style="gap: 10px">
+    <div id="search-layout">
+        
+        <div class="layout-kiri">
             <div class="icon">
                 <svg xmlns="http://www.w3.org/2000/svg" style="color: white; font-weight: bold;" width="17" height="17" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
@@ -9,8 +10,8 @@
             </div>
             <input class="search" type="text" v-model="searchText" :placeholder="searchPlaceholder">
         </div>
-        <div class="d-flex" style="gap: 8px">
 
+        <div class="layout-kanan">
             <div v-for="(action, actionIndex) in actions" :key="actionIndex">
                 <div 
                     @click="emitAction(action.label)" 
@@ -23,7 +24,7 @@
     </div>
 
     <div class="table">
-        <table style="width: 100%;">
+        <table>
             <thead>
                 <tr>
                     <th>No</th>
@@ -228,8 +229,6 @@
         cursor: pointer;
     }
 
-
-
     @media screen and (min-width: 360px) and (max-width: 527px) {
 
         label,
@@ -267,7 +266,7 @@
         }
 
         input.search {
-            width: 150px;
+            min-width: 125px;
             font-size: 10pt;
         }
 

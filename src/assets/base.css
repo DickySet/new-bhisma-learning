@@ -105,3 +105,13 @@ body {
     'Helvetica Neue',
     sans-serif;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 0;
+  width: 100%;
+  color: black;
+  transition: all 0.35s ease-in-out;
+}

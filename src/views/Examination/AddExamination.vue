@@ -824,8 +824,8 @@
                     <button type="button" class="btn-sm btn-close" data-bs-toggle="modal" data-bs-target="#importSoal"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="d-flex" style="gap: 20px">
-                        <div class="card shadow border-0" style="width: 35%">
+                    <div class="d-flex flex-wrap" style="gap: 20px">
+                        <div class="card shadow border-0" style="width: 35%; flex-grow: 1; flex-basis: 34%;">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between align-items-center">
                                     
@@ -947,7 +947,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card shadow border-0" style="width: 65%">
+                        <div class="card shadow border-0" style="width: 65%; flex-grow: 1; flex-basis: 64%;">
                             <div class="card-body">
                                 <div class="d-flex justify-content-center" style="gap: 15px">
                                     <button class="button-tambah1">Lihat Soal Yang Dipilih</button>

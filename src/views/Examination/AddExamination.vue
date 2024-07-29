@@ -546,11 +546,11 @@
                                         <template v-if="chooseVersion == 1">
                                             <div class="text-center mt-4">
                                                 <h5>Kunci Jawaban</h5>
-                                                <div class="d-flex justify-content-center" style="gap: 30px">
+                                                <div class="kunci-jawaban">
                                                     <template v-for="options in option">
-                                                        <div class="d-flex" style="gap: 15px">
+                                                        <div class="kunci-jawaban-layout">
                                                             <input type="radio">
-                                                            <label style="margin-top: 8px"><b>{{options.option_name}}.</b></label>
+                                                            <label><b>{{options.option_name}}.</b></label>
                                                         </div>
                                                     </template>
                                                 </div>
@@ -562,11 +562,11 @@
                                         <template v-if="chooseVersion == 3">
                                             <div class="text-center mt-4">
                                                 <h5>Kunci Jawaban</h5>
-                                                <div class="d-flex justify-content-center" style="gap: 30px">
+                                                <div class="kunci-jawaban">
                                                     <template v-for="options in option">
-                                                        <div class="d-flex" style="gap: 15px">
+                                                        <div class="kunci-jawaban-layout">
                                                             <input type="checkbox">
-                                                            <label style="margin-top: 8px"><b>{{options.option_name}}.</b></label>
+                                                            <label ><b>{{options.option_name}}.</b></label>
                                                         </div>
                                                     </template>
                                                 </div>

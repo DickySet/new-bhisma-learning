@@ -308,6 +308,22 @@ button.nav-link {
     font-size: 13.5pt !important;
 }
 
+.kunci-jawaban {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.kunci-jawaban .kunci-jawaban-layout {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.kunci-jawaban .kunci-jawaban-layout label {
+    margin-top: 5px
+}
+
 @media screen and (min-width: 0) and (max-width:359px) {
 
     h5 {
@@ -400,6 +416,14 @@ button.nav-link {
 
     button.nav-link {
         font-size: 11pt !important;
+    }
+
+    .kunci-jawaban {
+        gap: 10px;
+    }
+
+    .kunci-jawaban .kunci-jawaban-layout {
+        gap: 5px;
     }
 
 }
@@ -496,6 +520,14 @@ button.nav-link {
 
     button.nav-link {
         font-size: 11pt !important;
+    }
+
+    .kunci-jawaban {
+        gap: 10px;
+    }
+
+    .kunci-jawaban .kunci-jawaban-layout {
+        gap: 5px;
     }
 
 }

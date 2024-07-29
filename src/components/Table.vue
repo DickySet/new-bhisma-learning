@@ -37,7 +37,7 @@
                     <td>{{rowIndex + 1}}</td>
                     <td v-for="header in displayColumns" :key="header">{{ row[header] }}</td>
                     <td v-if="actionsTable.length">
-                        <div class="d-flex justify-content-center" style="gap: 8px">
+                        <div class="d-flex" style="gap: 8px">
                             <div v-for="(action, actionIndex) in actionsTable" :key="actionIndex">
                                 <svg 
                                     @click="emitActionTable(rowIndex, action.label)" 

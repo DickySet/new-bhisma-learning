@@ -10,6 +10,11 @@ import Examination from '../views/Examination/Examination.vue'
 import AddExamination from '../views/Examination/AddExamination.vue'
 import ViewExamination from '../views/Examination/ViewExamination.vue'
 import NotFoundView from '../views/NotFound/NotFoundPage.vue'
+import ButtonIcon from '../views/Template/ButtonIcon.vue'
+import Typography from '../views/Template/Typography.vue'
+import Panels from '../views/Template/Panels.vue'
+import Forms from '../views/Template/Forms.vue'
+import TableTemplate from '../views/Template/TableTemplate.vue'
 
 const router = createRouter({
     history: createWebHistory(),
@@ -64,10 +69,35 @@ const router = createRouter({
             path: '/add-examination',
             component: AddExamination
         },
+        // {
+        //     name: 'View Examination',
+        //     path: '/view-examination',
+        //     component: ViewExamination
+        // },
         {
-            name: 'View Examination',
-            path: '/view-examination',
-            component: ViewExamination
+            name: 'Button and Icon',
+            path: '/button-and-icon',
+            component: ButtonIcon
+        },
+        {
+            name: 'Typography',
+            path: '/typography',
+            component: Typography
+        },
+        {
+            name: 'Panels',
+            path: '/panels',
+            component: Panels
+        },
+        {
+            name: 'Forms',
+            path: '/forms',
+            component: Forms
+        },
+        {
+            name: 'Table Template',
+            path: '/tables',
+            component: TableTemplate
         },
 
     ]

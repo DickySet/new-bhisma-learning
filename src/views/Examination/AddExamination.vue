@@ -656,7 +656,7 @@
                             </div>
 
                             <div class="d-flex flex-wrap mt-3" style="gap: 20px">
-                                <div style="width: 50%; flex-grow: 1; flex-basis: 49%;">
+                                <div style="width: 50%; flex-grow: 1; flex-basis: 48%;">
                                     <div class="d-flex justify-content-between" style="gap: 10px">
                                         <div class="format" style="width: 84%">
                                             <label style="font-weight: bold">Pilih Jenis File Import</label>
@@ -684,7 +684,7 @@
                                         <input type="file" id="images" accept="image/*" required>
                                     </div>
                                 </div>
-                                <div style="width: 50%; flex-grow: 1; flex-basis: 49%;">
+                                <div style="width: 50%; flex-grow: 1; flex-basis: 48%;">
                                     <div class="title">
                                         <div class="d-flex mb-0" style="gap: 20px">
                                             <label style="font-weight: bold">Unduh Format Soal ujian</label>

@@ -19,7 +19,7 @@
             <div class="kotak1" @click="display('kontak')">
                 <div class="d-flex justify-content-between" style="gap: 20px">
                     <div class="isikotak0 shadow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" style="font-weight:bold; color:white" fill="currentColor" class="bi bi-person-workspace" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" style="width:35px; height:35px; color:white" fill="currentColor" class="bi bi-person-workspace" viewBox="0 0 16 16">
                             <path d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
                             <path d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.4 5.4 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2z"/>
                         </svg>
@@ -37,7 +37,7 @@
             <div class="kotak1" @click="display('kontak')">
                 <div class="d-flex justify-content-between" style="gap: 20px">
                     <div class="isikotak1 shadow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" style="font-weight:bold; color:white" fill="currentColor" class="bi bi-person-video3" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" style="width:35px; height:35px; color:white" fill="currentColor" class="bi bi-person-video3" viewBox="0 0 16 16">
                             <path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2"/>
                             <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783Q16 12.312 16 12V4a2 2 0 0 0-2-2z"/>
                         </svg>
@@ -55,7 +55,7 @@
             <div class="kotak1" @click="display('terkirim')">
                 <div class="d-flex justify-content-between" style="gap: 40px">
                     <div class="isikotak2 shadow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" style="font-weight:bold; color:white" fill="currentColor" class="bi bi-person-badge" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" style="width:35px; height:35px; color:white"  fill="currentColor" class="bi bi-person-badge" viewBox="0 0 16 16">
                             <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
                             <path d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492z"/>
                         </svg>
@@ -74,7 +74,7 @@
             <div class="kotak1" @click="display('ditolak')">
                 <div class="d-flex justify-content-between">
                     <div class="isikotak3 shadow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" style="font-weight:bold; color:white" class="bi bi-people-fill" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" style="width:35px; height:35px; color:white"  class="bi bi-people-fill" viewBox="0 0 16 16">
                             <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
                         </svg>
                     </div>

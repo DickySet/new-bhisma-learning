@@ -25,7 +25,7 @@
                             <template v-for="(sub_header_children, b) in sub_header.data_sub_children" :key="sub_header_children.menu_name">
                                 <router-link :to="'/'+sub_header_children.menu_path">
                                     <div class="d-flex align-items-center menu1">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                        <svg xmlns="http://www.w3.org/2000/svg" style="width: 10px; height: 10px;" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
                                             <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
                                         </svg>
                                         <label style="margin-top: 5px; cursor: pointer">{{ sub_header_children.menu_name }}</label>
@@ -123,10 +123,10 @@
                                         menu_name: "Examination",
                                         menu_path: "examination"
                                     },
-                                    {
-                                        menu_name: "View Examination",
-                                        menu_path: "view-examination"
-                                    },
+                                    // {
+                                    //     menu_name: "View Examination",
+                                    //     menu_path: "view-examination"
+                                    // },
                                 ]
                             },
                             {

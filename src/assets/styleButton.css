@@ -42,6 +42,20 @@ button.button-tambah {
     transition: all 0.4s ease;
 }
 
+button.button-export {
+    border-radius: 8px;
+    border: 0px solid transparent;
+    padding: 9px 25px 4px 25px;
+    font-size: 13pt;
+    height: 40px;
+    /* font-weight: bold; */
+    color: white;
+    background-image: linear-gradient(to bottom, #EE427D 0%, #A8144A 100%);
+    /* background-image: linear-gradient(to bottom, #489DEC 0%, #00387F 100%); */
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
 button.button-tambah1 {
     border-radius: 8px;
     border: 0px solid transparent;
@@ -103,6 +117,13 @@ button.button-simpan:hover {
     transition: all 0.4s ease;
 }
 
+button.button-export:hover {
+    padding: 9px 30px 4px 30px;
+    /* background: #489DEC; */
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
 button.button-tutup:hover {
     padding: 9px 30px 4px 30px;
     /* background: #3C3C43; */
@@ -117,6 +138,7 @@ button.button-tutup:hover {
         height: 35px;
     }
 
+    button.button-export,
     button.button-edit {
         padding: 0.5em 1.7em;
         font-size: 9pt;
@@ -155,6 +177,7 @@ button.button-tutup:hover {
         height: 30px;
     }
 
+    button.button-export,
     button.button-edit {
         padding: 0.5em 1.7em;
         font-size: 8pt;

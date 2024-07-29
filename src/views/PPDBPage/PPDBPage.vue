@@ -910,9 +910,14 @@
             height: 10px;
         }
 
+        .input input {
+            font-size: 11pt;
+            height: 30px;
+        }
+
 
         .input .button {
-            width: 25%;
+            width: 35%;
         }
         
         .input .button button {

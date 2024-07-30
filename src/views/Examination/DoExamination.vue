@@ -172,15 +172,15 @@
                     },
                     {
                         number_soal: 13,
-                        value: 'Y'
+                        value: 'N'
                     },
                     {
                         number_soal: 14,
-                        value: 'Y'
+                        value: 'N'
                     },
                     {
                         number_soal: 15,
-                        value: 'Y'
+                        value: 'N'
                     },
                     {
                         number_soal: 16,
@@ -188,6 +188,10 @@
                     },
                     {
                         number_soal: 17,
+                        value: 'Y'
+                    },
+                    {
+                        number_soal: 18,
                         value: 'Y'
                     },
                 ]

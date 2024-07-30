@@ -8,7 +8,7 @@
     </div>
 
     <div class="d-flex flex-wrap" style="gap: 20px">
-        <div class="card border-0 mt-3" style="width: 50%; flex-grow: 1; ">
+        <div class="card border-0 mt-3" style="width: 50%; flex-grow: 1; flex-basis: 49%">
             <div class="card-body">
                 <div class="padding-content">
                     <div class="mb-2 mt-2">
@@ -79,7 +79,7 @@
                 </div>
             </div>
         </div>
-        <div style="width: 50%; flex-grow: 1; margin-top: 32px">
+        <div style="width: 50%; flex-grow: 1; margin-top: 32px; flex-basis: 49%">
             <div class="padding-content">
                 <div class="mb-2 mt-2">
                     <h5 style="margin-bottom: 0px">Collapse</h5>

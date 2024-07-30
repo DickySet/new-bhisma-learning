@@ -9,7 +9,7 @@
     </div>
 
     <div class="d-flex flex-wrap" style="gap: 20px">
-        <div class="card border-0 mt-3" style="width: 100%">
+        <div class="card border-0 mt-3" style="width: 49%; flex-grow: 1; flex-basis: 48%">
             <div class="card-body">
                 <div class="mt-2 padding-content">
                     <h5 style="font-weight: bold">Stacked Form</h5>
@@ -25,7 +25,7 @@
                 </div>
             </div>
         </div>
-        <div class="card border-0 mt-3" style="width: 100%">
+        <div class="card border-0 mt-3" style="width: 49%; flex-grow: 1; flex-basis: 48%">
             <div class="card-body">
                 <div class="padding-content">
                     <h5 class="mt-2" style="font-weight: bold">Horizontal Form</h5>

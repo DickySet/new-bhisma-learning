@@ -9,6 +9,7 @@ import CrudPage from '../views/MainPage/CrudPage.vue'
 import Examination from '../views/Examination/Examination.vue'
 import AddExamination from '../views/Examination/AddExamination.vue'
 import ViewExamination from '../views/Examination/ViewExamination.vue'
+import DoExamination from '../views/Examination/DoExamination.vue'
 import NotFoundView from '../views/NotFound/NotFoundPage.vue'
 import ButtonIcon from '../views/Template/ButtonIcon.vue'
 import Typography from '../views/Template/Typography.vue'
@@ -98,6 +99,11 @@ const router = createRouter({
             name: 'Table Template',
             path: '/tables',
             component: TableTemplate
+        },
+        {
+            name: 'Do Examination',
+            path: '/do-examination',
+            component: DoExamination
         },
 
     ]

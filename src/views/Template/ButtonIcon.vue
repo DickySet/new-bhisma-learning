@@ -13,7 +13,7 @@
 
             <div class="padding-content">
                 <div class="d-flex flex-wrap" style="gap: 20px">
-                    <div style="width: 49.5%; flex-grow: 1; flex-basis: 49%">
+                    <div style="width: 49.5%; flex-grow: 1; flex-basis: 48%">
                         <div class="mt-2">
                             <label style="font-weight: bold">Button Color</label>
                             <div class="d-flex" style="gap: 10px">
@@ -55,7 +55,7 @@
                             </div>
                         </div>
                     </div>
-                    <div style="width: 49.5%; flex-grow: 1; flex-basis: 49%">
+                    <div style="width: 49.5%; flex-grow: 1; flex-basis: 48%">
                         <div class="mt-2 ">
                             <label style="font-weight: bold">Icon</label>
                             <div class="d-flex justify-content-between flex-wrap" style="gap: 10px">

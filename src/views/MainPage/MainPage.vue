@@ -123,6 +123,10 @@
                                         menu_name: "Examination",
                                         menu_path: "examination"
                                     },
+                                    {
+                                        menu_name: "Do Examination",
+                                        menu_path: "do-examination"
+                                    },
                                     // {
                                     //     menu_name: "View Examination",
                                     //     menu_path: "view-examination"

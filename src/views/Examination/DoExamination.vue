@@ -186,6 +186,10 @@
                         number_soal: 16,
                         value: 'Y'
                     },
+                    {
+                        number_soal: 17,
+                        value: 'Y'
+                    },
                 ]
             }
         },

@@ -38,13 +38,29 @@
                                 <a class="nav-link cek">Info PPDB</a>
                             </router-link>
                         </li>
-                        <li class="nav-item">
-                            <router-link to="/login">
-                                <button class="nav">
-                                    <a class="nav-link">Login</a>
-                                </button>
-                            </router-link>
-                        </li>
+                        <template v-if="isLoggedIn">
+                            <li class="nav-item">
+                                <router-link to="/login">
+                                    <button class="nav">
+                                        <a class="nav-link">Login</a>
+                                    </button>
+                                </router-link>
+                            </li>
+                        </template>
+                        <template v-else>
+                            <li class="nav-item">
+                                <router-link to="/dashboard">
+                                    <div style="margin-top: -7px;width: 50px; height: 50px; border-radius: 50%; border: 2px solid white; display: flex; justify-content: center; align-items: center;">
+                                        <div style=" ;width: 40px; height: 40px; border-radius: 50%; background-color: white; display: flex; justify-content: center; align-items: center;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" style="color: black; width: 25px; height: 25px;" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </router-link>
+                            </li>
+
+                        </template>
                     </ul>
                 </span>
             </div>
@@ -270,6 +286,7 @@
                 dataSekolah: 125,
                 dataSiswa: 1678,
                 dataUjian: 13564,
+                isLoggedIn: true,
             }
         },
         mounted(){

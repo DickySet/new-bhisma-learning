@@ -43,8 +43,8 @@
                                     <template v-for="options in option">
                                         <div class="d-flex" style="gap: 10px;">
                                             <input style="width: 4%" type="radio">
-                                            <h5 style="width: 4%">{{options.option_name}}.</h5>
-                                            <p style="width: 90%">{{options.question}}</p>
+                                            <label style="width: 4%l; font-weight: bold;">{{options.option_name}}</label>
+                                            <p style="width: 89%">{{options.question}}</p>
                                         </div>
                                     </template>
                                 </div>

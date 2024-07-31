@@ -271,10 +271,10 @@
                                                 <h5 style="margin-top: 2px" class="font-weight-bold">Pernyataan</h5>
                                             </div>
 
-                                            <!-- <textarea rows="4" placeholder="Masukan Pernyataan"></textarea> -->
-                                            <div>
+                                            <textarea rows="4" placeholder="Masukan Pernyataan"></textarea>
+                                            <!-- <div>
                                                 <QuillEditor theme="snow" toolbar="full" :modules="modules" />
-                                            </div>
+                                            </div> -->
 
                                             <!-- SOAL PILIHAN GANDA -->
                                                 <template v-if="chooseVersion == 1">
@@ -284,10 +284,10 @@
                                                         <h5 style="margin-top: 2px" class="font-weight-bold">Pertanyaan</h5>
                                                     </div>
 
-                                                    <!-- <textarea rows="4" placeholder="Masukan Soal"></textarea> -->
-                                                    <div>
+                                                    <textarea rows="4" placeholder="Masukan Soal"></textarea>
+                                                    <!-- <div>
                                                         <QuillEditor theme="snow" toolbar="full" :modules="modules" />
-                                                    </div>
+                                                    </div> -->
 
                                                     <div class="d-flex mb-2">
                                                         <div style="width: 8%;margin-top: 8px">
@@ -314,10 +314,10 @@
                                                             <div style="width: 92%">
                                                                 <div class="d-flex justify-content-between mb-3" style="gap: 10px;">
                                                                     <!-- <h5 style="">Jawaban</h5> -->
-                                                                    <!-- <textarea rows="2" placeholder="Masukan Jawaban"></textarea> -->
-                                                                    <div style="height: 50%; width: 94%;">
+                                                                    <textarea rows="2" placeholder="Masukan Jawaban"></textarea>
+                                                                    <!-- <div style="height: 50%; width: 94%;">
                                                                         <QuillEditor theme="snow" toolbar="full" :modules="modules" />
-                                                                    </div>
+                                                                    </div> -->
                                                                     <div style="width: 3.5%;">
                                                                         <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" style="color: red;" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
                                                                             <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
@@ -340,10 +340,10 @@
                                                         <h5 style="margin-top: 2px" class="font-weight-bold">Pertanyaan</h5>
                                                     </div>
 
-                                                    <!-- <textarea rows="4" placeholder="Masukan Soal"></textarea> -->
-                                                    <div>
+                                                    <textarea rows="4" placeholder="Masukan Soal"></textarea>
+                                                    <!-- <div>
                                                         <QuillEditor theme="snow" toolbar="full" :modules="modules" />
-                                                    </div>
+                                                    </div> -->
 
                                                 </template>
                                             <!-- SOAL ESSAY -->
@@ -356,10 +356,10 @@
                                                         <h5 style="margin-top: 2px" class="font-weight-bold">Pertanyaan</h5>
                                                     </div>
 
-                                                    <!-- <textarea rows="4" placeholder="Masukan Soal"></textarea> -->
-                                                    <div>
+                                                    <textarea rows="4" placeholder="Masukan Soal"></textarea>
+                                                    <!-- <div>
                                                         <QuillEditor theme="snow" toolbar="full" :modules="modules" />
-                                                    </div>
+                                                    </div> -->
 
                                                     <div class="d-flex mb-2">
                                                         <div style="width: 8%;margin-top: 8px">
@@ -385,9 +385,10 @@
                                                             </div>
                                                             <div style="width: 92%">
                                                                 <div class="d-flex justify-content-between mb-3" style="gap: 10px;">
-                                                                    <div style="height: 50%; width: 94%;">
+                                                                    <!-- <div style="height: 50%; width: 94%;">
                                                                         <QuillEditor theme="snow" toolbar="full" :modules="modules" />
-                                                                    </div>
+                                                                    </div> -->
+                                                                    <textarea rows="2" placeholder="Masukan Soal"></textarea>
                                                                     <div style="width: 3.5%;">
                                                                         <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" style="color: red; margin-top: 8px" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
                                                                             <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
@@ -426,10 +427,10 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="card-body">
-                                                                    <!-- <textarea rows="3" placeholder="Masukan Pertanyaan"></textarea> -->
-                                                                    <div>
+                                                                    <textarea rows="3" placeholder="Masukan Pertanyaan"></textarea>
+                                                                    <!-- <div>
                                                                         <QuillEditor theme="snow" toolbar="full" :modules="modules" />
-                                                                    </div>
+                                                                    </div> -->
                                                                     <div class="d-flex justify-content-between align-items-center mt-1">
                                                                         <label>Kunci Jawaban</label>
                                                                         <select style="width: 20%; text-align: center">
@@ -492,10 +493,10 @@
                                                         <h5 style="margin-top: 2px" class="font-weight-bold">Pertanyaan</h5>
                                                     </div>
 
-                                                    <!-- <textarea rows="4" placeholder="Masukan Soal"></textarea> -->
-                                                    <div>
+                                                    <textarea rows="4" placeholder="Masukan Soal"></textarea>
+                                                    <!-- <div>
                                                         <QuillEditor theme="snow" toolbar="full" :modules="modules" />
-                                                    </div>
+                                                    </div> -->
                                                     <div class="d-flex justify-content-between" style="gap: 20px;">
                                                         <div class="d-flex" style="gap: 10px; padding: 6px 0px 0px 0px">
                                                             <div style="background-image: linear-gradient(to bottom, #489DEC 0%, #00387F 100%); width: 20px; height: 20px; border-radius: 50%; "></div>
@@ -546,10 +547,10 @@
                                                             </div>
                                                         </div>
                                                         <div class="card-body">
-                                                            <!-- <textarea rows="3" placeholder="Masukan Pertanyaan"></textarea> -->
-                                                            <div>
+                                                            <textarea rows="3" placeholder="Masukan Pertanyaan"></textarea>
+                                                            <!-- <div>
                                                                 <QuillEditor theme="snow" toolbar="full" :modules="modules" />
-                                                            </div>
+                                                            </div> -->
                                                             <div class="d-flex mt-2" style="gap:120px">
                                                                 <label>Pilihan Jawaban</label>
                                                                 <div>
@@ -1068,7 +1069,7 @@
 <script>
 
     import Title from '../../components/TitlePage.vue';
-    import BlotFormatter from 'quill-blot-formatter'
+    // import BlotFormatter from 'quill-blot-formatter'
 
     export default {
         components: {
@@ -1076,11 +1077,11 @@
         },
         data() {
             return {
-                modules: {
-                    name: 'blotFormatter',  
-                    module: BlotFormatter, 
-                    options: {}
-                },
+                // modules: {
+                //     name: 'blotFormatter',  
+                //     module: BlotFormatter, 
+                //     options: {}
+                // },
                 title: 'Pembuatan Soal Ujian',
                 subTitle: 'Perhatikan setiap detail dari pembuatan soal ujian',
                 chooseVersion: 0,

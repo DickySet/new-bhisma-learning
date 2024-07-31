@@ -1068,14 +1068,11 @@
 <script>
 
     import Title from '../../components/TitlePage.vue';
-    import { QuillEditor } from '@vueup/vue-quill'
-    import '@vueup/vue-quill/dist/vue-quill.snow.css';
     import BlotFormatter from 'quill-blot-formatter'
 
     export default {
         components: {
             Title,
-            QuillEditor
         },
         data() {
             return {

@@ -12,12 +12,16 @@ import VueAxios from 'vue-axios'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 import popover from './directives/popover';
+import { QuillEditor } from '@vueup/vue-quill'
+import '@vueup/vue-quill/dist/vue-quill.snow.css';
 
 const app = createApp(App)
 
 app.use(router)
 
 app.use(store)
+
+app.component('QuillEditor', QuillEditor)
 
 app.use(VueAxios, axios)
 
